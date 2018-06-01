@@ -10,6 +10,7 @@ package Edificacion_Milicia;
  * @author diego
  */
 public interface Milicia {
+    String entrenar();
     String atacar();
     String defender();
 }
