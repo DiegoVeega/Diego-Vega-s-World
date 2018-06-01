@@ -10,5 +10,6 @@ package Edificacion_Vehiculo;
  * @author diego
  */
 public interface Vehiculo {
+    String construccion();
     String atacar();
 }
