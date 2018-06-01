@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Milicias;
+package Edificacion_Recolectora;
 
 /**
  *
  * @author diego
  */
-public interface Milicia {
-    String atacar();
-    String defender();
+public interface Edificacion {
+    String generar();
 }

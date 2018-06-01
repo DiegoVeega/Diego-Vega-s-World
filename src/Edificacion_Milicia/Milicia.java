@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Vehiculos;
+package Edificacion_Milicia;
 
 /**
  *
  * @author diego
  */
-public interface Vehiculo {
+public interface Milicia {
     String atacar();
+    String defender();
 }

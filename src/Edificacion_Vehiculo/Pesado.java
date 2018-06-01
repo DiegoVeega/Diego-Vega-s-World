@@ -3,21 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Milicias;
+package Edificacion_Vehiculo;
 
 /**
  *
  * @author diego
  */
-public class Escuadron implements Milicia{
+public class Pesado implements Vehiculo{
 
     @Override
     public String atacar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String defender() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

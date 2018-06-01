@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Edificaciones;
+package Edificacion_Vehiculo;
 
 /**
  *
  * @author diego
  */
-public interface Edificacion {
-    String generar();
+public interface Vehiculo {
+    String atacar();
 }

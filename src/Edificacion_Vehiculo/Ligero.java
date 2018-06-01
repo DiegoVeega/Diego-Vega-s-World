@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Edificaciones;
+package Edificacion_Vehiculo;
 
 /**
  *
  * @author diego
  */
-public class Recolector_Plata implements Edificacion{
+public class Ligero implements Vehiculo{
 
     @Override
-    public String generar() {
+    public String atacar() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
