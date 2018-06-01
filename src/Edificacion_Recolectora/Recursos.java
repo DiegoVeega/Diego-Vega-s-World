@@ -9,6 +9,7 @@ package Edificacion_Recolectora;
  *
  * @author diego
  */
-public interface Edificacion {
+public interface Recursos {
     String generar();
+    String recolectar();
 }
