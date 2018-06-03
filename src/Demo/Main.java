@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         String Rey1,Rey2;
+        int turno=1;
         Scanner texto=new Scanner(System.in);
         System.out.println("\t\t\t.#####...######..######...####....####...........##..##..######...####....####.....##.....####...\n" +
                            "\t\t\t.##..##....##....##......##......##..##..........##..##..##......##......##..##....##....##......\n" +
@@ -26,6 +27,19 @@ public class Main {
         Rey1=texto.nextLine();
         System.out.print("\t\t\tSegundo Rey ingrese su nombre: ");
         Rey2=texto.nextLine();
+        int RUN=1;
         
+        do{
+            if(turno==1){
+                System.out.println("Rey "+Rey1+" es su turno.");
+                RUN=texto.nextInt();
+                turno=2;
+            }
+            else{
+                System.out.println("Rey "+Rey2+" es su turno.");
+                RUN=texto.nextInt();
+                turno=1;
+            }
+        }while(RUN!=0);
     }
 }
