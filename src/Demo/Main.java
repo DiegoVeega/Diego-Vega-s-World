@@ -35,20 +35,22 @@ public class Main {
         Rey2=texto.nextLine();
         int RUN=1;
         
-        System.out.print("\n\t\tRey "+Rey1+" es su turno.");
+        System.out.print("\n\t\tRey "+Rey1+" es su turno.\n");
         do{
             //OPCIONES
+            Menu menu= Menu.getInstance();
+            menu.Opciones();
             if(turno==1){
                 JUGADOR=1;
-                System.out.print("\n\t\tRey "+Rey1+" es su turno.");
-                RUN=texto.nextInt();
-                turno=2;
+                System.out.print("\n\t\tRey "+Rey2+" es su turno.\n");
+                //RUN=texto.nextInt();
+                turno=2;//PASAR AL JUGADOR 2
             }
             else{
                 JUGADOR=2;
-                System.out.print("\n\t\tRey "+Rey2+" es su turno.");
-                RUN=texto.nextInt();
-                turno=1;
+                System.out.print("\n\t\tRey "+Rey1+" es su turno.\n");
+                //RUN=texto.nextInt();
+                turno=1;//PASAR AL JUGADOR 1
             }
         }while(RUN!=0);
         //AGREGAR VARIABLE "JUGADOR" Y HACER QUE DEFINA QUIEN HA GANADO LA PARTIDA.
