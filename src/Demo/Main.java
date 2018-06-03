@@ -35,10 +35,9 @@ public class Main {
         Rey2=texto.nextLine();
         int RUN=1;
         
+        System.out.print("\n\t\tRey "+Rey1+" es su turno.");
         do{
-            /**
-             * JUEGO EN ESTA SECCION
-             */
+            //OPCIONES
             if(turno==1){
                 JUGADOR=1;
                 System.out.print("\n\t\tRey "+Rey1+" es su turno.");
