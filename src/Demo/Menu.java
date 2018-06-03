@@ -18,38 +18,44 @@ public class Menu {
         }
         return instance;
     }
-    
+    //PROBABLEMENTE AGREGAR MENU PARA CADA RAZA ENVIANDO PARAMETROS AL MENU, PARA MAYOR COMODIDAD Y ESPECIFICACION CON LO QUE SE ESTA SELECCIONANDO.
     public void Opciones(){
         int op=5;
         int ops;
         Scanner text=new Scanner(System.in);
         while(op!=4){
             
-            System.out.println("1. Crear recolectores.");
-            System.out.println("2. Formar milicia.");
-            System.out.println("3. Construir vehiculos de ataque.");
-            System.out.println("4. Terminar turno.");
-            System.out.print("Tu seleccion: ");
+            System.out.println("\n\t\t1. Crear recolectores.");
+            System.out.println("\t\t2. Formar milicia.");
+            System.out.println("\t\t3. Construir vehiculos de ataque.");
+            System.out.println("\t\t4. Terminar turno.");
+            System.out.print("\t\tTu seleccion: ");
             op=text.nextInt();
             switch(op){
                 case 1:
                     ops=5;
                     while(ops!=4){
-                        System.out.println("1. Recolector de Oro.");
-                        System.out.println("2. Recolector de Plata.");
-                        System.out.println("3. Recolector de Diamante.");
-                        System.out.println("4. Terminar turno.");
-                        System.out.print("Tu seleccion: ");
+                        System.out.println("\n\t\t1. Recolector de Oro.");
+                        System.out.println("\t\t2. Recolector de Plata.");
+                        System.out.println("\t\t3. Recolector de Diamante.");
+                        System.out.println("\t\t4. Terminar accion.");
+                        System.out.print("\t\tTu seleccion: ");
                         ops=text.nextInt();
                         switch(ops){
                             case 1:
                                 //RECOLECTOR
+                                System.out.println("RECOL");
                                 break;
                             case 2:
                                 //RECOLECTOR
+                                System.out.println("RECOL");
                                 break;
                             case 3:
                                 //RECOLECTOR
+                                System.out.println("RECOL");
+                                break;
+                            case 4:
+                                System.out.println("\n\t\tTermino accion en: Recolectores.");
                                 break;
                             default:
                                 System.out.println("Ingrese opcion valida, por favor.");
@@ -60,17 +66,22 @@ public class Menu {
                 case 2:
                     ops=4;
                     while(ops!=3){
-                        System.out.println("1. Obtener escuadron.");
-                        System.out.println("2. Obtener Especialista.");
-                        System.out.println("3. Terminar turno.");
-                        System.out.print("Tu seleccion: ");
+                        System.out.println("\n\t\t1. Obtener escuadron.");
+                        System.out.println("\t\t2. Obtener Especialista.");
+                        System.out.println("\t\t3. Terminar accion.");
+                        System.out.print("\t\tTu seleccion: ");
                         ops=text.nextInt();
                         switch(ops){
                             case 1:
-                                //RECOLECTOR
+                                //ESCUADRON
+                                System.out.println("MILIESCUA");
                                 break;
                             case 2:
-                                //RECOLECTOR
+                                //ESPECIALISTA
+                                System.out.println("MILIESPE");
+                                break;
+                            case 3:
+                                System.out.println("\n\t\tTermino accione en: Milicia");
                                 break;
                             default:
                                 System.out.println("Ingrese opcion valida, por favor.");
@@ -81,17 +92,22 @@ public class Menu {
                 case 3:
                     ops=4;
                     while(ops!=3){
-                        System.out.println("1. Vehiculo pesado.");
-                        System.out.println("2. Vehiculo ligero.");
-                        System.out.println("3. Terminar turno.");
-                        System.out.print("Tu seleccion: ");
+                        System.out.println("\n\t\t1. Vehiculo pesado.");
+                        System.out.println("\t\t2. Vehiculo ligero.");
+                        System.out.println("\t\t3. Terminar accion.");
+                        System.out.print("\t\tTu seleccion: ");
                         ops=text.nextInt();
                         switch(ops){
                             case 1:
                                 //RECOLECTOR
+                                System.out.println("VEHIPESADO");
                                 break;
                             case 2:
                                 //RECOLECTOR
+                                System.out.println("VEHILIGIRO");
+                                break;
+                            case 3:
+                                System.out.println("\n\t\tTermino accion en: Vehiculos.");
                                 break;
                             default:
                                 System.out.println("Ingrese opcion valida, por favor.");
@@ -99,8 +115,11 @@ public class Menu {
                         }
                     }
                     break;
+                case 4:
+                    System.out.println("\n\t\t:::::::::::::::::::::::::::...::...::::.......::CAMBIO::DE::TURNOS::......::::...::...::::::::::::::::::::::::::");
+                    break;
                 default:
-                    System.out.println("Ingrese opcion valida, por favor.");
+                    System.out.println("\n\t\tIngrese opcion valida, por favor.");
                     break;
             }
             
