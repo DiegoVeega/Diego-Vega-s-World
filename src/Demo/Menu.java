@@ -1,5 +1,6 @@
 package Demo;
 
+import Factorys.AbstractFactory;
 import java.util.Scanner;
 
 /**
@@ -20,6 +21,8 @@ public class Menu {
     }
     //PROBABLEMENTE AGREGAR MENU PARA CADA RAZA ENVIANDO PARAMETROS AL MENU, PARA MAYOR COMODIDAD Y ESPECIFICACION CON LO QUE SE ESTA SELECCIONANDO.
     public void Opciones(){
+        
+        /**
         int op=5;
         int ops;
         Scanner text=new Scanner(System.in);
@@ -44,7 +47,6 @@ public class Menu {
                         switch(ops){
                             case 1:
                                 //RECOLECTOR
-                                System.out.println("RECOL");
                                 break;
                             case 2:
                                 //RECOLECTOR
@@ -121,8 +123,9 @@ public class Menu {
                 default:
                     System.out.println("\n\t\tIngrese opcion valida, por favor.");
                     break;
+                   
             }
             
-        }
+        }*/
     }
 }
