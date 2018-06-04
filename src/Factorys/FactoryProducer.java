@@ -5,13 +5,25 @@
  */
 package Factorys;
 
+import Bestias.FactoryBestia;
+import Esqueletos.FactoryEsqueleto;
+import Humanos.FactoryHumano;
+
 /**
  *
  * @author diego
  */
 public class FactoryProducer {
-    public static AbstractFactory getFactory(){
-        //INSTRUCCIONES.
+    public static AbstractFactory getFactory(int raza){
+        //INSTRUCCIONES, QUE RAZA SELECCIONAR.
+        switch(raza){
+            case 1:
+                return new FactoryHumano();
+            case 2:
+                return new FactoryEsqueleto();
+            case 3:
+                return new FactoryBestia();
+        }
         return null;
     }
 }
