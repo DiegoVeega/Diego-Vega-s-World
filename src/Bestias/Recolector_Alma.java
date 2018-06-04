@@ -9,7 +9,7 @@ package Bestias;
  *
  * @author diego
  */
-public class Recolector_Diamante_B implements Bestia{
+public class Recolector_Alma implements Bestia{
 
     @Override
     public String M_entrenar() {
