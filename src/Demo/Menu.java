@@ -1,6 +1,7 @@
 package Demo;
 
 import Factorys.AbstractFactory;
+import Factorys.FactoryProducer;
 import java.util.Scanner;
 
 /**
@@ -19,10 +20,16 @@ public class Menu {
         }
         return instance;
     }
+    AbstractFactory factory;
     //PROBABLEMENTE AGREGAR MENU PARA CADA RAZA ENVIANDO PARAMETROS AL MENU, PARA MAYOR COMODIDAD Y ESPECIFICACION CON LO QUE SE ESTA SELECCIONANDO.
-    public void Opciones(){
+    
+    public void seleccionRaza(int raza){
+        factory =FactoryProducer.getFactory(raza);
+    }
+    
+    public void Opciones(int razavar){
         
-        /**
+        
         int op=5;
         int ops;
         Scanner text=new Scanner(System.in);
@@ -126,6 +133,8 @@ public class Menu {
                    
             }
             
-        }*/
+        }
+        //AQUI
+        
     }
 }
