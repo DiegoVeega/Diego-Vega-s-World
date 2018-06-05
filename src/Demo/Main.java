@@ -11,7 +11,9 @@ public class Main {
         String Rey1,Rey2;
         int turno=1;
         int JUGADOR; //ESTA VARIABLE SERVIRA DE CONTROLADOR DEL JUGADOR QUE JUGO EL ULTIMO TURNO.
+        Menu menu= Menu.getInstance();
         Scanner texto=new Scanner(System.in);
+        Scanner texto1=new Scanner(System.in);
         System.out.println("\t\t:'########::'####:'########::'######::::'#######:::::'##::::'##:'########::'######::::::'###::::'####::'######::\n" +
                            "\t\t::##.... ##:. ##:: ##.....::'##... ##::'##.... ##:::: ##:::: ##: ##.....::'##... ##::::'## ##::: ####:'##... ##:\n" +
                            "\t\t::##:::: ##:: ##:: ##::::::: ##:::..::: ##:::: ##:::: ##:::: ##: ##::::::: ##:::..::::'##:. ##::. ##:: ##:::..::\n" +
@@ -28,29 +30,72 @@ public class Main {
                            "\t\t:::::::::::::::::::::::::: ##: ##: ##: ##:::: ##: ##::. ##:: ##::::::: ##:::: ##::::::::::::::::::::::::::::::::\n" +
                            "\t\t::::::::::::::::::::::::::. ###. ###::. #######:: ##:::. ##: ########: ########:::::::::::::::::::::::::::::::::\n" +
                            "\t\t:::::::::::::::::::::::::::...::...::::.......:::..:::::..::........::........::::::::::::::::::::::::::::::::::");
-        System.out.println("");
+        //REY 1
+        
         System.out.print("\n\t\tBienvenidos reyes.\n\n\t\tPrimer Rey ingrese su nombre: ");
         Rey1=texto.nextLine();
+        System.out.println("\t\tRey "+Rey1+" seleccione su raza.");
+        //SELECCION DE RAZA
+        System.out.println("\n\t\t1. Humano");
+        System.out.println("\n\t\t2. Esqueleto");
+        System.out.println("\n\t\t3. Bestia");
+        System.out.print("\n\t\tTu eleccion: ");
+        int RAZAR1=texto.nextInt();
+        
+        switch(RAZAR1){
+            case 1:
+                menu.seleccionRaza(RAZAR1);
+                break;
+            case 2:
+                menu.seleccionRaza(RAZAR1);
+                break;
+            case 3:
+                menu.seleccionRaza(RAZAR1);
+                break;
+        }
+        //REY 2
+        
         System.out.print("\t\tSegundo Rey ingrese su nombre: ");
-        Rey2=texto.nextLine();
+        Rey2=texto1.nextLine();
+        System.out.println("\t\tRey "+Rey2+" seleccione su raza.");
+        //SELECCION DE RAZA
+        System.out.println("\n\t\t1. Humano");
+        System.out.println("\n\t\t2. Esqueleto");
+        System.out.println("\n\t\t3. Bestia");
+        System.out.print("\n\t\tTu eleccion: ");
+        int RAZAR2=texto1.nextInt();
+        
+        switch(RAZAR2){
+            case 1:
+                menu.seleccionRaza(RAZAR2);
+                break;
+            case 2:
+                menu.seleccionRaza(RAZAR2);
+                break;
+            case 3:
+                menu.seleccionRaza(RAZAR2);
+                break;
+        }
+        
         int RUN=1;
         
         System.out.print("\n\t\tRey "+Rey1+" es su turno.\n");
+        int razavar=RAZAR1;
         do{
-            //OPCIONES
-            Menu menu= Menu.getInstance();
-            menu.Opciones();
+            menu.Opciones(razavar);
             if(turno==1){
                 JUGADOR=1;
                 System.out.print("\n\t\tRey "+Rey2+" es su turno.\n");
                 //RUN=texto.nextInt();
                 turno=2;//PASAR AL JUGADOR 2
+                razavar=RAZAR2;
             }
             else{
                 JUGADOR=2;
                 System.out.print("\n\t\tRey "+Rey1+" es su turno.\n");
                 //RUN=texto.nextInt();
                 turno=1;//PASAR AL JUGADOR 1
+                razavar=RAZAR1;
             }
         }while(RUN!=0);
         //AGREGAR VARIABLE "JUGADOR" Y HACER QUE DEFINA QUIEN HA GANADO LA PARTIDA.
