@@ -24,9 +24,12 @@ public class FactoryHumano implements AbstractFactory{
     @Override
     public Humano getHumano(int tipo) {
         int tecla;
+        int ops;
         Scanner leer=new Scanner(System.in);
         switch(tipo){
             case 1:
+                ops=5;
+                while(ops!=4){
                 System.out.println("\n\t\tQue tipo de recolector desea? ");
                 System.out.println("\n\t\t1. Recolector de Madera.");
                 System.out.println("\n\t\t2. Recolector de Piedra.");
@@ -40,6 +43,13 @@ public class FactoryHumano implements AbstractFactory{
                         return new Recolector_Piedra();
                     case 3:
                         return new Recolector_Hierro();
+                    case 4:
+                        System.out.println("\n\t\tTermino accion en: Recolectores.");
+                        break;
+                    default:
+                        System.out.println("Ingrese opcion valida, por favor.");
+                        break;
+                }
                 }
                 break;
             case 2:
