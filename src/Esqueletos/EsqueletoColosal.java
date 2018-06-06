@@ -11,7 +11,8 @@ package Esqueletos;
  * @author diego
  */
 public class EsqueletoColosal implements Esqueleto{
-
+    
+    
     //METODOS MILICIA.
     @Override
     public String M_entrenar() {
@@ -27,6 +28,7 @@ public class EsqueletoColosal implements Esqueleto{
     public String M_defender() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
     //METODOS EDIFICACION.
     @Override
     public String E_generar() {
