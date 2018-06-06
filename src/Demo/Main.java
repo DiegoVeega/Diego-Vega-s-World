@@ -98,6 +98,7 @@ public class Main {
                 razavar=RAZAR1;
             }
         }while(RUN!=0);
+        
         //AGREGAR VARIABLE "JUGADOR" Y HACER QUE DEFINA QUIEN HA GANADO LA PARTIDA.
         if(JUGADOR==1){
             System.out.println("\n");
