@@ -47,5 +47,10 @@ public class Horda implements Esqueleto{
     public String V_atacar() {
         return null;
     }
+
+    @Override
+    public String generarCE() {
+        return null;
+    }
     
 }

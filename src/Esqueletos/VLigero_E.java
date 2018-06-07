@@ -46,5 +46,10 @@ public class VLigero_E implements Esqueleto{
     public String V_atacar() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    @Override
+    public String generarCE() {
+        return null;
+    }
     
 }

@@ -45,5 +45,10 @@ public class Recolector_Diamante implements Esqueleto{
     public String V_atacar() {
         return null;
     }
+
+    @Override
+    public String generarCE() {
+        return null;
+    }
     
 }
