@@ -49,8 +49,8 @@ public class Horda implements Esqueleto{
     }
 
     @Override
-    public String generarCE() {
-        return null;
+    public void generarCE() {
+        
     }
     
 }

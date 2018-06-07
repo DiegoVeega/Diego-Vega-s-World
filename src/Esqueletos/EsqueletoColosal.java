@@ -51,8 +51,7 @@ public class EsqueletoColosal implements Esqueleto{
     }
 
     @Override
-    public String generarCE() {
-        return null;
+    public void generarCE() {
     }
     
 }

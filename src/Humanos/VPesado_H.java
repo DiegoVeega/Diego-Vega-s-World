@@ -47,8 +47,8 @@ public class VPesado_H implements Humano{
     }
 
     @Override
-    public String generarCH() {
-        return null;
+    public void generarCH() {
+        
     }
     
 }

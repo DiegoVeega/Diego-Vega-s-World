@@ -47,8 +47,8 @@ public class Recolector_Madera implements Humano{
     }
 
     @Override
-    public String generarCH() {
-        return null;
+    public void generarCH() {
+        
     }
     
 }

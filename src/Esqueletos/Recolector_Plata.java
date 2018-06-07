@@ -48,8 +48,7 @@ public class Recolector_Plata implements Esqueleto{
     }
 
     @Override
-    public String generarCE() {
-        return null;
+    public void generarCE() {
     }
     
 }

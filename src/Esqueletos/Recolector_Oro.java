@@ -47,8 +47,8 @@ public class Recolector_Oro implements Esqueleto{
     }
 
     @Override
-    public String generarCE() {
-        return null;
+    public void generarCE() {
+        
     }
     
 }

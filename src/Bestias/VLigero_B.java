@@ -47,8 +47,8 @@ public class VLigero_B implements Bestia{
     }
 
     @Override
-    public String generarCB() {
-        return null;
+    public void generarCB() {
+        
     }
     
 }

@@ -48,8 +48,8 @@ public class VLigero_E implements Esqueleto{
     }
 
     @Override
-    public String generarCE() {
-        return null;
+    public void generarCE() {
+        
     }
     
 }

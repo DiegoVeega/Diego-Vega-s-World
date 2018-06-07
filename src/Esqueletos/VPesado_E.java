@@ -47,8 +47,8 @@ public class VPesado_E implements Esqueleto{
     }
 
     @Override
-    public String generarCE() {
-        return null;
+    public void generarCE() {
+        
     }
     
 }
