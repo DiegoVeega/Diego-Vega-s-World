@@ -27,6 +27,8 @@ public class FactoryBestia implements AbstractFactory{
                 return new VPesado_B();
             case 7:
                 return new VLigero_B();
+            case 8:
+                return new Centro_B();
         }
         return null;
     }

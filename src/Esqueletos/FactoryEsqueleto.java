@@ -32,6 +32,8 @@ public class FactoryEsqueleto implements AbstractFactory{
                 return new VPesado_E();
             case 7:
                 return new VLigero_E();
+            case 8:
+                return new Centro_E();
         }
         return null;
     }

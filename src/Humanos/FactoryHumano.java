@@ -37,6 +37,8 @@ public class FactoryHumano implements AbstractFactory {
                 return new VPesado_H();
             case 7:
                 return new VLigero_H();
+            case 8:
+                return new Centro_H();
         }
         return null;
     }
