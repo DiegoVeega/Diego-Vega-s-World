@@ -45,5 +45,10 @@ public class VLigero_B implements Bestia{
     public String V_atacar() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    @Override
+    public String generarCB() {
+        return null;
+    }
     
 }

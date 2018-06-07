@@ -45,5 +45,10 @@ public class Tribu implements Bestia{
     public String V_atacar() {
         return null;
     }
+
+    @Override
+    public String generarCB() {
+        return null;
+    }
     
 }

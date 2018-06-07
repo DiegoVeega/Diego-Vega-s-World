@@ -45,5 +45,10 @@ public class Recolector_Luz implements Bestia{
     public String V_atacar() {
         return null;
     }
+
+    @Override
+    public String generarCB() {
+        return null;
+    }
     
 }
