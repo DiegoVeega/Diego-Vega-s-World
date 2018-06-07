@@ -19,4 +19,6 @@ public interface Esqueleto {
     //METODOS VEHICULO:
     String V_construccion();
     String V_atacar();
+    //CENTRO DE MANDO
+    String generarCE();
 }
