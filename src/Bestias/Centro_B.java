@@ -47,9 +47,9 @@ public class Centro_B implements Bestia{
     }
 
     @Override
-    public String generarCB() {
+    public void generarCB() {
         //METODO PARA GENERAR
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("\t\tRey, ahora tiene un centro de mando bestial.");
     }
     
 }

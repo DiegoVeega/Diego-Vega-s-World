@@ -47,11 +47,11 @@ public class Centro_H implements Humano{
     }
 
     @Override
-    public String generarCH() {
+    public void generarCH() {
         //METODO PARA GENERAR
-        String mensaje;
-        mensaje="HOAL";
-        return mensaje;
+        //String mensaje;
+        System.out.println("\t\tRey, ahora tiene un centro de mando humano.");
+        
     }
     
     
