@@ -45,5 +45,10 @@ public class Recolector_Hierro implements Humano{
     public String V_atacar() {
         return null;
     }
+
+    @Override
+    public String generarCH() {
+        return null;
+    }
     
 }

@@ -46,5 +46,10 @@ public class Especialista implements Humano{
     public String V_atacar() {
         return null;
     }
+
+    @Override
+    public String generarCH() {
+        return null;
+    }
     
 }
