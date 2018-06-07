@@ -20,5 +20,5 @@ public interface Esqueleto {
     String V_construccion();
     String V_atacar();
     //CENTRO DE MANDO
-    String generarCE();
+    void generarCE();
 }

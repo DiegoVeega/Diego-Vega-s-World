@@ -21,5 +21,5 @@ public interface Bestia {
     String V_construccion();
     String V_atacar();
     //CENTRO DE MANDO
-    String generarCB();
+    void generarCB();
 }

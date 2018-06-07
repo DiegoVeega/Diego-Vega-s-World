@@ -21,5 +21,5 @@ public interface Humano {
     String V_construccion();
     String V_atacar();
     //CENTRO DE MANDO
-    String generarCH();
+    void generarCH();
 }
