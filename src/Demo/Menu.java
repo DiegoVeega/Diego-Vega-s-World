@@ -28,9 +28,18 @@ public class Menu {
     //PROBABLEMENTE AGREGAR MENU PARA CADA RAZA ENVIANDO PARAMETROS AL MENU, PARA MAYOR COMODIDAD Y ESPECIFICACION CON LO QUE SE ESTA SELECCIONANDO.
 
     public void seleccionRaza(int raza) {
-        factory = FactoryProducer.getFactory(raza);
-        //AGREGAR CREACION DEL CENTRO
-        //IMPLEMENTAR NUEVO METODO DE MUESTRA
+        if(raza==1){
+            factory = FactoryProducer.getFactory(raza);
+            Humano centroH=factory.getHumano(8);
+        }
+        if(raza==2){
+            factory = FactoryProducer.getFactory(raza);
+            Esqueleto centroE=factory.getEsqueleto(8);
+        }
+        if(raza==3){
+            factory = FactoryProducer.getFactory(raza);
+            Bestia centroB=factory.getBestia(8);
+        }
     }
 
     public void Opciones(int razavar) {
