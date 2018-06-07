@@ -20,4 +20,6 @@ public interface Humano {
     //METODOS VEHICULO:
     String V_construccion();
     String V_atacar();
+    //CENTRO DE MANDO
+    String generarCH();
 }
