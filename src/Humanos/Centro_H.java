@@ -49,7 +49,9 @@ public class Centro_H implements Humano{
     @Override
     public String generarCH() {
         //METODO PARA GENERAR
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String mensaje;
+        mensaje="HOAL";
+        return mensaje;
     }
     
     
