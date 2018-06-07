@@ -20,4 +20,6 @@ public interface Bestia {
     //METODOS VEHICULO:
     String V_construccion();
     String V_atacar();
+    //CENTRO DE MANDO
+    String generarCB();
 }
