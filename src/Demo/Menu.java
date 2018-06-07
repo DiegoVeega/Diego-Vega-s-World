@@ -29,6 +29,7 @@ public class Menu {
 
     public void seleccionRaza(int raza) {
         factory = FactoryProducer.getFactory(raza);
+        //AGREGAR CREACION DEL CENTRO
     }
 
     public void Opciones(int razavar) {
