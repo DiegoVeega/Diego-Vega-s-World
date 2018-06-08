@@ -74,15 +74,66 @@ public class Menu {
                             switch (ops) {
                                 case 1:
                                     //RECOLECTOR
+                                    ops=3;
+                                    ////////////////////////////////////////////////////////////////////////////////////
                                     Humano madera = factory.getHumano(1);
+                                    while(ops!=3){
+                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\t\t2. Obetener lo recolectado.");
+                                        System.out.println("\t\t3. Terminar accion.");
+                                        System.out.println("\n\t\tTu eleccion: ");
+                                        ops=text.nextInt();
+                                        switch(ops){
+                                            case 1:
+                                                madera.E_generar();
+                                                break;
+                                            case 2:
+                                                madera.E_recolectar();
+                                                break;
+                                        }
+                                    }
                                     break;
                                 case 2:
                                     //RECOLECTOR
+                                    ops=3;
+                                    ////////////////////////////////////////////////////////////////////////////////////
                                     Humano piedra = factory.getHumano(2);
+                                    while(ops!=3){
+                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\t\t2. Obetener lo recolectado.");
+                                        System.out.println("\t\t3. Terminar accion.");
+                                        System.out.println("\n\t\tTu eleccion: ");
+                                        ops=text.nextInt();
+                                        switch(ops){
+                                            case 1:
+                                                piedra.E_generar();
+                                                break;
+                                            case 2:
+                                                piedra.E_recolectar();
+                                                break;
+                                        }
+                                    }
                                     break;
                                 case 3:
                                     //RECOLECTOR
+                                    ops=3;
+                                    ///////////////////////////////////////////////////////////////////
                                     Humano hierro = factory.getHumano(3);
+                                    while(ops!=3){
+                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\t\t2. Obetener lo recolectado.");
+                                        System.out.println("\t\t3. Terminar accion.");
+                                        System.out.println("\n\t\tTu eleccion: ");
+                                        ops=text.nextInt();
+                                        switch(ops){
+                                            case 1:
+                                                hierro.E_generar();
+                                                break;
+                                            case 2:
+                                                hierro.E_recolectar();
+                                                break;
+                                        }
+                                    }
                                     break;
                                 case 4:
                                     System.out.println("\n\t\tTermino accion en: Recolectores.");
