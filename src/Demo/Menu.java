@@ -74,7 +74,7 @@ public class Menu {
                             switch (ops) {
                                 case 1:
                                     //RECOLECTOR
-                                    ops=3;
+                                    ops=4;
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Humano madera = factory.getHumano(1);
                                     while(ops!=3){
@@ -95,7 +95,7 @@ public class Menu {
                                     break;
                                 case 2:
                                     //RECOLECTOR
-                                    ops=3;
+                                    ops=4;
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Humano piedra = factory.getHumano(2);
                                     while(ops!=3){
@@ -116,7 +116,7 @@ public class Menu {
                                     break;
                                 case 3:
                                     //RECOLECTOR
-                                    ops=3;
+                                    ops=4;
                                     ///////////////////////////////////////////////////////////////////
                                     Humano hierro = factory.getHumano(3);
                                     while(ops!=3){
@@ -155,11 +155,53 @@ public class Menu {
                             switch (ops) {
                                 case 1:
                                     //ESCUADRON
+                                    ops=5;
+                                    ///////////////////////////////////////////////////////////////////
                                     Humano soldados = factory.getHumano(4);
+                                    while(ops!=4){
+                                        System.out.println("\n\t\t1. Comenzar a entrenar.");
+                                        System.out.println("\t\t2. Comenzar ataque.");
+                                        System.out.println("\t\t3. Comenzar defenza.");
+                                        System.out.println("\t\t4. Terminar accion.");
+                                        System.out.println("\n\t\tTu eleccion: ");
+                                        ops=text.nextInt();
+                                        switch(ops){
+                                            case 1:
+                                                soldados.M_entrenar();
+                                                break;
+                                            case 2:
+                                                soldados.M_atacar();
+                                                break;
+                                            case 3:
+                                                soldados.M_defender();
+                                                break;
+                                        }
+                                    }
                                     break;
                                 case 2:
                                     //ESPECIALISTA
+                                    ops=5;
+                                    ///////////////////////////////////////////////////////////////////
                                     Humano especialista = factory.getHumano(5);
+                                    while(ops!=4){
+                                        System.out.println("\n\t\t1. Comenzar a entrenar.");
+                                        System.out.println("\t\t2. Comenzar ataque.");
+                                        System.out.println("\t\t3. Comenzar defenza.");
+                                        System.out.println("\t\t4. Terminar accion.");
+                                        System.out.println("\n\t\tTu eleccion: ");
+                                        ops=text.nextInt();
+                                        switch(ops){
+                                            case 1:
+                                                especialista.M_entrenar();
+                                                break;
+                                            case 2:
+                                                especialista.M_atacar();
+                                                break;
+                                            case 3:
+                                                especialista.M_defender();
+                                                break;
+                                        }
+                                    }
                                     break;
                                 case 3:
                                     System.out.println("\n\t\tTermino accione en: Milicia");
@@ -180,12 +222,45 @@ public class Menu {
                             ops = text.nextInt();
                             switch (ops) {
                                 case 1:
-                                    //RECOLECTOR
+                                    ops=4;
+                                    ///////////////////////////////////////////////////////////////////
                                     Humano tanque = factory.getHumano(6);
+                                    while(ops!=3){
+                                        System.out.println("\n\t\t1. Construir vehiculo.");
+                                        System.out.println("\t\t2. Comenzar ataque.");
+                                        System.out.println("\t\t3. Terminar accion.");
+                                        System.out.println("\n\t\tTu eleccion: ");
+                                        ops=text.nextInt();
+                                        switch(ops){
+                                            case 1:
+                                                tanque.V_construccion();
+                                                break;
+                                            case 2:
+                                                tanque.V_atacar();
+                                                break;
+                                        }
+                                    }
                                     break;
                                 case 2:
                                     //RECOLECTOR
+                                    ops=4;
+                                    ///////////////////////////////////////////////////////////////////
                                     Humano moto = factory.getHumano(7);
+                                    while(ops!=3){
+                                        System.out.println("\n\t\t1. Construir vehiculo.");
+                                        System.out.println("\t\t2. Comenzar ataque.");
+                                        System.out.println("\t\t3. Terminar accion.");
+                                        System.out.println("\n\t\tTu eleccion: ");
+                                        ops=text.nextInt();
+                                        switch(ops){
+                                            case 1:
+                                                moto.V_construccion();
+                                                break;
+                                            case 2:
+                                                moto.V_atacar();
+                                                break;
+                                        }
+                                    }
                                     break;
                                 case 3:
                                     System.out.println("\n\t\tTermino accion en: Vehiculos.");
