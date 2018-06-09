@@ -5,6 +5,8 @@
  */
 package Bestias;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author diego
@@ -18,8 +20,9 @@ public interface Bestia {
     String E_generar();
     String E_recolectar();
     //METODOS VEHICULO:
-    String V_construccion();
+    void V_construccion();
     String V_atacar();
     //CENTRO DE MANDO
-    void generarCB();
+    ArrayList<Integer> generarCB();
+    void mejorarCB(int num,ArrayList<Integer> Centro);
 }
