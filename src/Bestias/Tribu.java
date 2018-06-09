@@ -5,6 +5,8 @@
  */
 package Bestias;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author diego
@@ -37,8 +39,8 @@ public class Tribu implements Bestia{
     }
     //METODOS VEHICULO.
     @Override
-    public String V_construccion() {
-        return null;
+    public void V_construccion() {
+        
     }
 
     @Override
@@ -47,8 +49,15 @@ public class Tribu implements Bestia{
     }
 
     @Override
-    public void generarCB() {
+    public ArrayList<Integer> generarCB() {
+        return null;
+    }
+
+    @Override
+    public void mejorarCB(int num, ArrayList<Integer> Centro) {
         
     }
+
+    
     
 }

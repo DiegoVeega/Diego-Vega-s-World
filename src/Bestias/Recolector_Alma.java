@@ -5,6 +5,8 @@
  */
 package Bestias;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author diego
@@ -37,8 +39,8 @@ public class Recolector_Alma implements Bestia{
     }
 
     @Override
-    public String V_construccion() {
-        return null;
+    public void V_construccion() {
+        
     }
 
     @Override
@@ -46,9 +48,15 @@ public class Recolector_Alma implements Bestia{
         return null;
     }
 
+
     @Override
-    public void generarCB() {
+    public void mejorarCB(int num, ArrayList<Integer> Centro) {
         
+    }
+
+    @Override
+    public ArrayList<Integer> generarCB() {
+        return null;
     }
     
 }

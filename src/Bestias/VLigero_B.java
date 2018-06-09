@@ -5,6 +5,8 @@
  */
 package Bestias;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author diego
@@ -37,7 +39,7 @@ public class VLigero_B implements Bestia{
     }
 
     @Override
-    public String V_construccion() {
+    public void V_construccion() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -47,7 +49,12 @@ public class VLigero_B implements Bestia{
     }
 
     @Override
-    public void generarCB() {
+    public ArrayList<Integer> generarCB() {
+        return null;
+    }
+
+    @Override
+    public void mejorarCB(int num, ArrayList<Integer> Centro) {
         
     }
     

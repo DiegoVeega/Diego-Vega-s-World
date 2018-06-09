@@ -5,6 +5,8 @@
  */
 package Bestias;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author diego
@@ -37,8 +39,8 @@ public class BestiaMayor implements Bestia{
     }
     //METODOS VEHICULO.
     @Override
-    public String V_construccion() {
-        return null;
+    public void V_construccion() {
+        System.out.println("ESTOY CONSTRUYENDO");
     }
 
     @Override
@@ -47,8 +49,12 @@ public class BestiaMayor implements Bestia{
     }
 
     @Override
-    public void generarCB() {
-        
+    public ArrayList<Integer> generarCB() {
+        return null;
     }
-    
+
+    @Override
+    public void mejorarCB(int num, ArrayList<Integer> Centro) {
+        //return null;
+    }  
 }
