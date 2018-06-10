@@ -5,6 +5,8 @@
  */
 package Esqueletos;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author diego
@@ -47,8 +49,19 @@ public class VPesado_E implements Esqueleto{
     }
 
     @Override
-    public void generarCE() {
+    public ArrayList<Integer> generarCE() {
+        return null;
+    }
+
+    @Override
+    public void mejorarCE(int num, ArrayList<Integer> Centro) {
         
     }
+
+    @Override
+    public void mostrarCE(ArrayList<Integer> Centro) {
+        
+    }
+
     
 }

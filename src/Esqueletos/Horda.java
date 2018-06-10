@@ -5,6 +5,8 @@
  */
 package Esqueletos;
 
+import java.util.ArrayList;
+
 
 /**
  *
@@ -49,8 +51,18 @@ public class Horda implements Esqueleto{
     }
 
     @Override
-    public void generarCE() {
+    public ArrayList<Integer> generarCE() {
+        return null;
+    }
+
+    @Override
+    public void mejorarCE(int num, ArrayList<Integer> Centro) {
         
     }
-    
+
+    @Override
+    public void mostrarCE(ArrayList<Integer> Centro) {
+        
+    }
+
 }

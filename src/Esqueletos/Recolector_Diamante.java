@@ -5,6 +5,8 @@
  */
 package Esqueletos;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author diego
@@ -47,8 +49,19 @@ public class Recolector_Diamante implements Esqueleto{
     }
 
     @Override
-    public void generarCE() {
+    public ArrayList<Integer> generarCE() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void mejorarCE(int num, ArrayList<Integer> Centro) {
         
     }
+
+    @Override
+    public void mostrarCE(ArrayList<Integer> Centro) {
+        
+    }
+
     
 }
