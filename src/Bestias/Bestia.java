@@ -13,9 +13,13 @@ import java.util.ArrayList;
  */
 public interface Bestia {
     //METODOS MILICIA:
-    String M_entrenar();
-    String M_atacar();
-    String M_defender();
+    ArrayList<Tribu> M_entrenar();
+    void M_atacar(ArrayList<Tribu> Tribu);
+    void M_defender(ArrayList<Tribu> Tribu);
+    
+    ArrayList<BestiaMayor> M_entrenarE();
+    void M_atacarE(ArrayList<BestiaMayor> BestiaMayor);
+    void M_defenderE(ArrayList<BestiaMayor> BestiaMayor);
     //METODOS EDIFICACION:
     int E_generar();
     ArrayList<Integer> E_recolectar(int a,ArrayList<Integer> Centro);
@@ -24,6 +28,6 @@ public interface Bestia {
     String V_atacar();
     //CENTRO DE MANDO
     ArrayList<Integer> generarCB();
-    void mejorarCB(int num,ArrayList<Integer> Centro);
+    ArrayList<Integer> mejorarCB(int num,ArrayList<Integer> Centro);
     void mostrarCB(ArrayList<Integer> Centro);
 }
