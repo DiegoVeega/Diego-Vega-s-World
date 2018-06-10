@@ -33,12 +33,12 @@ public class EsqueletoColosal implements Esqueleto{
     
     //METODOS EDIFICACION.
     @Override
-    public String E_generar() {
-        return null;
+    public int E_generar() {
+        return 0;
     }
 
     @Override
-    public String E_recolectar() {
+    public ArrayList<Integer> E_recolectar(int a, ArrayList<Integer> Centro) {
         return null;
     }
     //METODOS VEHICULO.
