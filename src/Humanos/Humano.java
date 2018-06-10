@@ -5,6 +5,8 @@
  */
 package Humanos;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author diego
@@ -21,5 +23,7 @@ public interface Humano {
     String V_construccion();
     String V_atacar();
     //CENTRO DE MANDO
-    void generarCH();
+    ArrayList<Integer> generarCH();
+    void mejorarCH(int num,ArrayList<Integer> Centro);
+    void mostrarCH(ArrayList<Integer> Centro);
 }
