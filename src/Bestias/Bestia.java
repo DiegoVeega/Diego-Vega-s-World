@@ -25,4 +25,5 @@ public interface Bestia {
     //CENTRO DE MANDO
     ArrayList<Integer> generarCB();
     void mejorarCB(int num,ArrayList<Integer> Centro);
+    void mostrarCB(ArrayList<Integer> Centro);
 }
