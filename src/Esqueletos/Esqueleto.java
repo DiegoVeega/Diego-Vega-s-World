@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package Esqueletos;
+
+import java.util.ArrayList;
+
 /**
  *
  * @author diego
@@ -20,5 +23,7 @@ public interface Esqueleto {
     String V_construccion();
     String V_atacar();
     //CENTRO DE MANDO
-    void generarCE();
+    ArrayList<Integer> generarCE();
+    void mejorarCE(int num,ArrayList<Integer> Centro);
+    void mostrarCE(ArrayList<Integer> Centro);
 }
