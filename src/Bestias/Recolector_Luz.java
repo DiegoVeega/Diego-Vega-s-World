@@ -58,6 +58,11 @@ public class Recolector_Luz implements Bestia{
         
     }
 
+    @Override
+    public void mostrarCB(ArrayList<Integer> Centro) {
+        
+    }
+
     
     
 }

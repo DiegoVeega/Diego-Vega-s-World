@@ -58,5 +58,10 @@ public class Recolector_Alma implements Bestia{
     public ArrayList<Integer> generarCB() {
         return null;
     }
+
+    @Override
+    public void mostrarCB(ArrayList<Integer> Centro) {
+        
+    }
     
 }

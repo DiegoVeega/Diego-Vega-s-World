@@ -57,5 +57,10 @@ public class VLigero_B implements Bestia{
     public void mejorarCB(int num, ArrayList<Integer> Centro) {
         
     }
+
+    @Override
+    public void mostrarCB(ArrayList<Integer> Centro) {
+        
+    }
     
 }

@@ -57,4 +57,9 @@ public class BestiaMayor implements Bestia{
     public void mejorarCB(int num, ArrayList<Integer> Centro) {
         //return null;
     }  
+
+    @Override
+    public void mostrarCB(ArrayList<Integer> Centro) {
+        
+    }
 }

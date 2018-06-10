@@ -58,6 +58,11 @@ public class Tribu implements Bestia{
         
     }
 
+    @Override
+    public void mostrarCB(ArrayList<Integer> Centro) {
+        
+    }
+
     
     
 }

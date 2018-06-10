@@ -59,6 +59,11 @@ public class VPesado_B implements Bestia{
         
     }
 
+    @Override
+    public void mostrarCB(ArrayList<Integer> Centro) {
+        
+    }
+
     
     
 }
