@@ -60,7 +60,7 @@ public class Centro_H implements Humano{
         Centro.add(MAXmadera);
         Centro.add(MAXpiedra);
         Centro.add(MAXhierro);
-        System.out.println("\t\tRey, ahora tiene un centro de mando bestial.");
+        System.out.println("\n\t\tRey, ahora tiene un centro de mando Humano.");
         return Centro;    }
 
     @Override

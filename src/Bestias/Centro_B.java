@@ -60,7 +60,7 @@ public class Centro_B implements Bestia {
         Centro.add(MAXalma);
         Centro.add(MAXcristal);
         Centro.add(MAXluz);
-        System.out.println("\t\tRey, ahora tiene un centro de mando bestial.");
+        System.out.println("\n\t\tRey, ahora tiene un centro de mando bestial.");
         return Centro;
     }
 

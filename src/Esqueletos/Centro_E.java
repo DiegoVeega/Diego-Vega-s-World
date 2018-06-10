@@ -60,7 +60,7 @@ public class Centro_E implements Esqueleto{
         Centro.add(MAXplata);
         Centro.add(MAXoro);
         Centro.add(MAXdiamante);
-        System.out.println("\t\tRey, ahora tiene un centro de mando bestial.");
+        System.out.println("\n\t\tRey, ahora tiene un centro de mando Esqueletico.");
         return Centro;
     }
 
