@@ -17,8 +17,8 @@ public interface Humano {
     String M_atacar();
     String M_defender();
     //METODOS EDIFICACION:
-    String E_generar();
-    String E_recolectar();
+    int E_generar();
+    ArrayList<Integer> E_recolectar(int a,ArrayList<Integer> Centro);
     //METODOS VEHICULO:
     String V_construccion();
     String V_atacar();
