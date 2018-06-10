@@ -17,8 +17,8 @@ public interface Bestia {
     String M_atacar();
     String M_defender();
     //METODOS EDIFICACION:
-    String E_generar();
-    String E_recolectar();
+    int E_generar();
+    ArrayList<Integer> E_recolectar(int a,ArrayList<Integer> Centro);
     //METODOS VEHICULO:
     void V_construccion();
     String V_atacar();
