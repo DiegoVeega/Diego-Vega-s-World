@@ -29,13 +29,15 @@ public class Recolector_Madera implements Humano{
     }
 
     @Override
-    public String E_generar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int E_generar() {
+        int madera=100;
+        return madera;
     }
 
     @Override
-    public String E_recolectar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public ArrayList<Integer> E_recolectar(int a,ArrayList<Integer> Centro) {
+        Centro.set(0, +a);
+        return Centro;
     }
 
     @Override
@@ -60,7 +62,7 @@ public class Recolector_Madera implements Humano{
 
     @Override
     public void mostrarCH(ArrayList<Integer> Centro) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     
