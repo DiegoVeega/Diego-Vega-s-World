@@ -29,13 +29,15 @@ public class Recolector_Luz implements Bestia{
     }
 
     @Override
-    public String E_generar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int E_generar() {
+        int luz=100;
+        return luz;
     }
 
     @Override
-    public String E_recolectar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public ArrayList<Integer> E_recolectar(int a, ArrayList<Integer> Centro) {
+        Centro.set(2, +a);
+        return Centro;
     }
 
     @Override
