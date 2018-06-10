@@ -14,21 +14,6 @@ import java.util.ArrayList;
 public class Recolector_Cristal implements Bestia{
 
     @Override
-    public String M_entrenar() {
-        return null;
-    }
-
-    @Override
-    public String M_atacar() {
-        return null;
-    }
-
-    @Override
-    public String M_defender() {
-        return null;
-    }
-
-    @Override
     public int E_generar() {
         int cristal=100;
         return cristal;
@@ -49,12 +34,6 @@ public class Recolector_Cristal implements Bestia{
     public String V_atacar() {
         return null;
     }
-    
-
-    @Override
-    public void mejorarCB(int num, ArrayList<Integer> Centro) {
-        //return null;
-    }
 
     @Override
     public ArrayList<Integer> generarCB() {
@@ -64,6 +43,41 @@ public class Recolector_Cristal implements Bestia{
     @Override
     public void mostrarCB(ArrayList<Integer> Centro) {
         
+    }
+
+    @Override
+    public ArrayList<Tribu> M_entrenar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void M_atacar(ArrayList<Tribu> Tribu) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void M_defender(ArrayList<Tribu> Tribu) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<BestiaMayor> M_entrenarE() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void M_atacarE(ArrayList<BestiaMayor> BestiaMayor) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void M_defenderE(ArrayList<BestiaMayor> BestiaMayor) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<Integer> mejorarCB(int num, ArrayList<Integer> Centro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

@@ -17,21 +17,6 @@ public class Centro_B implements Bestia {
     int MAXalma = 10000, MAXcristal = 5000, MAXluz = 3000;
 
     @Override
-    public String M_entrenar() {
-        return null;
-    }
-
-    @Override
-    public String M_atacar() {
-        return null;
-    }
-
-    @Override
-    public String M_defender() {
-        return null;
-    }
-
-    @Override
     public void V_construccion() {
 
     }
@@ -55,7 +40,7 @@ public class Centro_B implements Bestia {
     }
 
     @Override
-    public void mejorarCB(int num, ArrayList<Integer> Centro) {
+    public ArrayList<Integer> mejorarCB(int num, ArrayList<Integer> Centro) {
         int costo;
         switch (num) {
             case 1:
@@ -102,7 +87,7 @@ public class Centro_B implements Bestia {
                 }
                 break;
         }
-        //return null;
+        return Centro;
     }
 
     @Override
@@ -125,6 +110,36 @@ public class Centro_B implements Bestia {
     @Override
     public ArrayList<Integer> E_recolectar(int a, ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<Tribu> M_entrenar() {
+        return null;
+    }
+
+    @Override
+    public void M_atacar(ArrayList<Tribu> Tribu) {
+        
+    }
+
+    @Override
+    public void M_defender(ArrayList<Tribu> Tribu) {
+        
+    }
+
+    @Override
+    public ArrayList<BestiaMayor> M_entrenarE() {
+        return null;
+    }
+
+    @Override
+    public void M_atacarE(ArrayList<BestiaMayor> BestiaMayor) {
+        
+    }
+
+    @Override
+    public void M_defenderE(ArrayList<BestiaMayor> BestiaMayor) {
+        
     }
 
 }
