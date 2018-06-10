@@ -5,6 +5,8 @@
  */
 package Humanos;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author diego
@@ -48,8 +50,18 @@ public class Especialista implements Humano{
     }
 
     @Override
-    public void generarCH() {
-        
+    public void mejorarCH(int num, ArrayList<Integer> Centro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void mostrarCH(ArrayList<Integer> Centro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<Integer> generarCH() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
