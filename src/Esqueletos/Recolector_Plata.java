@@ -30,13 +30,15 @@ public class Recolector_Plata implements Esqueleto{
     }
 
     @Override
-    public String E_generar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int E_generar() {
+        int plata=100;
+        return plata;
     }
 
     @Override
-    public String E_recolectar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public ArrayList<Integer> E_recolectar(int a,ArrayList<Integer> Centro) {
+        Centro.set(0, +a);
+        return Centro;
     }
 
     @Override
