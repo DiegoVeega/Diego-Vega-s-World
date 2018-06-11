@@ -123,15 +123,7 @@ public class BestiaMayor implements Bestia{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     //METODOS VEHICULO.
-    @Override
-    public void V_construccion() {
-        System.out.println("ESTOY CONSTRUYENDO");
-    }
-
-    @Override
-    public String V_atacar() {
-        return null;
-    }
+    
 
     @Override
     public ArrayList<Integer> generarCB() {
@@ -158,5 +150,25 @@ public class BestiaMayor implements Bestia{
     @Override
     public void M_defender(ArrayList<Tribu> Tribu) {
         
+    }
+
+    @Override
+    public ArrayList<VLigero_B> V_construccion() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void V_atacar(ArrayList<VLigero_B> VLigero_B) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<VPesado_B> V_construccionP() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void V_atacarP(ArrayList<VPesado_B> VPesado_B) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
