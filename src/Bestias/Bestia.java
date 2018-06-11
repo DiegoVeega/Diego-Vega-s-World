@@ -24,8 +24,11 @@ public interface Bestia {
     int E_generar();
     ArrayList<Integer> E_recolectar(int a,ArrayList<Integer> Centro);
     //METODOS VEHICULO:
-    void V_construccion();
-    String V_atacar();
+    ArrayList<VLigero_B> V_construccion();
+    void V_atacar(ArrayList<VLigero_B> VLigero_B);
+    
+    ArrayList<VPesado_B> V_construccionP();
+    void V_atacarP(ArrayList<VPesado_B> VPesado_B);
     //CENTRO DE MANDO
     ArrayList<Integer> generarCB();
     ArrayList<Integer> mejorarCB(int num,ArrayList<Integer> Centro);
