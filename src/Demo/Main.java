@@ -1,5 +1,6 @@
 package Demo;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -42,15 +43,16 @@ public class Main {
         System.out.print("\n\t\tTu eleccion: ");
         int RAZAR1=texto.nextInt();
         
+        ArrayList<Integer> Centro1=new ArrayList<>();
         switch(RAZAR1){
             case 1:
-                menu.seleccionRaza(RAZAR1);
+                Centro1=menu.seleccionRaza(RAZAR1);
                 break;
             case 2:
-                menu.seleccionRaza(RAZAR1);
+                Centro1=menu.seleccionRaza(RAZAR1);
                 break;
             case 3:
-                menu.seleccionRaza(RAZAR1);
+                Centro1=menu.seleccionRaza(RAZAR1);
                 break;
         }
         //REY 2
@@ -64,41 +66,48 @@ public class Main {
         System.out.println("\n\t\t3. Bestia");
         System.out.print("\n\t\tTu eleccion: ");
         int RAZAR2=texto1.nextInt();
+        ArrayList<Integer> Centro2=new ArrayList<>();
         
         switch(RAZAR2){
             case 1:
-                menu.seleccionRaza(RAZAR2);
+                Centro2=menu.seleccionRaza(RAZAR2);
                 break;
             case 2:
-                menu.seleccionRaza(RAZAR2);
+                Centro2=menu.seleccionRaza(RAZAR2);
                 break;
             case 3:
-                menu.seleccionRaza(RAZAR2);
+                Centro2=menu.seleccionRaza(RAZAR2);
                 break;
         }
         
         int RUN=1;
         
+        ArrayList<Integer> Centros=Centro1;
+        
         System.out.print("\n\t\tRey "+Rey1+" es su turno.\n");
+        
         int razavar=RAZAR1;
         do{
-            menu.Opciones(razavar);
+            //DIRECTAMENTE A LAS OPCIONES EN EL MENU
+            menu.Opciones(razavar, Centros);
+            
             if(turno==1){
                 JUGADOR=1;
                 System.out.print("\n\t\tRey "+Rey2+" es su turno.\n");
-                //RUN=texto.nextInt();
                 turno=2;//PASAR AL JUGADOR 2
+                Centros=Centro2;
                 razavar=RAZAR2;
             }
             else{
                 JUGADOR=2;
                 System.out.print("\n\t\tRey "+Rey1+" es su turno.\n");
-                //RUN=texto.nextInt();
                 turno=1;//PASAR AL JUGADOR 1
+                Centros=Centro1;
                 razavar=RAZAR1;
             }
         }while(RUN!=0);
-        
+                
+                
         //AGREGAR VARIABLE "JUGADOR" Y HACER QUE DEFINA QUIEN HA GANADO LA PARTIDA.
         if(JUGADOR==1){
             System.out.println("\n");
