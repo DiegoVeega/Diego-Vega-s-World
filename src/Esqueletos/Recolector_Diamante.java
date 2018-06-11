@@ -14,21 +14,6 @@ import java.util.ArrayList;
 public class Recolector_Diamante implements Esqueleto{
 
     @Override
-    public String M_entrenar() {
-        return null;
-    }
-
-    @Override
-    public String M_atacar() {
-        return null;
-    }
-
-    @Override
-    public String M_defender() {
-        return null;
-    }
-
-    @Override
     public int E_generar() {
         int diamante=100;
         return diamante;
@@ -41,28 +26,68 @@ public class Recolector_Diamante implements Esqueleto{
     }
 
     @Override
-    public String V_construccion() {
-        return null;
-    }
-
-    @Override
-    public String V_atacar() {
-        return null;
-    }
-
-    @Override
     public ArrayList<Integer> generarCE() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void mejorarCE(int num, ArrayList<Integer> Centro) {
+    public void mostrarCE(ArrayList<Integer> Centro) {
         
     }
 
     @Override
-    public void mostrarCE(ArrayList<Integer> Centro) {
-        
+    public ArrayList<Horda> M_entrenar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void M_atacar(ArrayList<Horda> Horda) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void M_defender(ArrayList<Horda> Horda) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<EsqueletoColosal> M_entrenarE() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void M_atacarE(ArrayList<EsqueletoColosal> EsqueletoColosal) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void M_defenderE(ArrayList<EsqueletoColosal> EsqueletoColosal) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<VLigero_E> V_construccion() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void V_atacar(ArrayList<VLigero_E> VLigero_E) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<VPesado_E> V_construccionP() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void V_atacarP(ArrayList<VPesado_E> VPesado_B) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<Integer> mejorarCE(int num, ArrayList<Integer> Centro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     
