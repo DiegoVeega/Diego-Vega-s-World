@@ -30,13 +30,13 @@ public class Especialista implements Humano{
     }
     //METODOS EDIFICACION.
     @Override
-    public String E_generar() {
-        return null;
+    public int E_generar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public String E_recolectar() {
-        return null;
+    public ArrayList<Integer> E_recolectar(int a, ArrayList<Integer> Centro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     //METODOS VEHICULO.
     @Override
