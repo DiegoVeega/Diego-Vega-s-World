@@ -26,8 +26,6 @@ public class Recolector_Alma implements Bestia{
         return Centro;
     }
 
-    
-
     @Override
     public ArrayList<Integer> generarCB() {
         return null;
