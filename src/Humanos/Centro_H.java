@@ -31,15 +31,7 @@ public class Centro_H implements Humano{
         return null;
     }
 
-    @Override
-    public String E_generar() {
-        return null;
-    }
-
-    @Override
-    public String E_recolectar() {
-        return null;
-    }
+    
 
     @Override
     public String V_construccion() {
@@ -61,7 +53,8 @@ public class Centro_H implements Humano{
         Centro.add(MAXpiedra);
         Centro.add(MAXhierro);
         System.out.println("\n\t\tRey, ahora tiene un centro de mando Humano.");
-        return Centro;    }
+        return Centro;    
+    }
 
     @Override
     public void mejorarCH(int num, ArrayList<Integer> Centro) {
@@ -123,6 +116,16 @@ public class Centro_H implements Humano{
         System.out.println("\t\t\t\t\t\t|  Hierro: "+Centro.get(2)+"      \t"+"\t"+Centro.get(5)+"\t\t|");
         System.out.println("\t\t\t\t\t\t|                        |"+"    \t\t\t|");
         System.out.println("\t\t\t\t\t\t+-----------------------------------------------+\n");
+    }
+
+    @Override
+    public int E_generar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<Integer> E_recolectar(int a, ArrayList<Integer> Centro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
