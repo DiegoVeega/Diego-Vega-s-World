@@ -15,9 +15,7 @@ public class Centro_B implements Bestia {
 
     int alma = 500, cristal = 500, luz = 500;
     int MAXalma = 10000, MAXcristal = 5000, MAXluz = 3000;
-
     
-
     @Override
     public ArrayList<Integer> generarCB() {
         ArrayList<Integer> Centro = new ArrayList<>();
@@ -96,12 +94,12 @@ public class Centro_B implements Bestia {
 
     @Override
     public int E_generar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return 0;
     }
 
     @Override
     public ArrayList<Integer> E_recolectar(int a, ArrayList<Integer> Centro) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
     }
 
     @Override
