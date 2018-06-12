@@ -27,7 +27,7 @@ public class Centro_H implements Humano{
         Centro.add(MAXpiedra);//4
         Centro.add(MAXhierro);//5
         Centro.add(vida);//6
-        System.out.println("\n\t\t\t\tRey, ahora tiene un centro de mando Humano.\n");
+        System.out.println("\n\t\t\t\t\t\tRey, ahora tiene un centro de mando Humano.\n");
         return Centro;    
     }
 
