@@ -1,6 +1,10 @@
 package Demo;
 
 import Bestias.Bestia;
+import Bestias.BestiaMayor;
+import Bestias.Tribu;
+import Bestias.VLigero_B;
+import Bestias.VPesado_B;
 import Esqueletos.Esqueleto;
 import Esqueletos.EsqueletoColosal;
 import Esqueletos.Horda;
@@ -810,6 +814,7 @@ public class Menu {
                                     ops = 5;
                                     ///////////////////////////////////////////////////////////////////
                                     Bestia tribu = factory.getBestia(4);
+                                    ArrayList<Tribu> TRI= new ArrayList<>();
                                     while (ops != 4) {
                                         System.out.println("\n\t\t1. Comenzar a entrenar.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -819,13 +824,13 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                tribu.M_entrenar();
+                                                TRI=tribu.M_entrenar(Centro1);
                                                 break;
                                             case 2:
-                                                tribu.M_atacar();
+                                                tribu.M_atacar(TRI, Centro1);
                                                 break;
                                             case 3:
-                                                tribu.M_defender();
+                                                tribu.M_defender(TRI, Centro1);
                                                 break;
                                         }
                                     }
@@ -835,6 +840,7 @@ public class Menu {
                                     ops = 5;
                                     ///////////////////////////////////////////////////////////////////
                                     Bestia Bmayor = factory.getBestia(5);
+                                    ArrayList<BestiaMayor> BM= new ArrayList<>();
                                     while (ops != 4) {
                                         System.out.println("\n\t\t1. Comenzar a entrenar.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -844,13 +850,13 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                Bmayor.M_entrenar();
+                                                BM=Bmayor.M_entrenarE(Centro1);
                                                 break;
                                             case 2:
-                                                Bmayor.M_atacar();
+                                                Bmayor.M_atacarE(BM, Centro1);
                                                 break;
                                             case 3:
-                                                Bmayor.M_defender();
+                                                Bmayor.M_defenderE(BM, Centro1);
                                                 break;
                                         }
                                     }
@@ -879,6 +885,7 @@ public class Menu {
                                     ///////////////////////////////////////////////////////////////////
                                     //factory = FactoryProducer.getFactory(3);
                                     Bestia VPesado_B = factory.getBestia(6);
+                                    ArrayList<VPesado_B> pesado= new ArrayList<>();
                                     while (ops != 3) {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -887,10 +894,10 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                VPesado_B.V_construccion();
+                                                pesado=VPesado_B.V_construccionP(Centro1);
                                                 break;
                                             case 2:
-                                                VPesado_B.V_atacar();
+                                                VPesado_B.V_atacarP(pesado, Centro1);
                                                 break;
                                         }
                                     }
@@ -900,6 +907,7 @@ public class Menu {
                                     ops = 4;
                                     ///////////////////////////////////////////////////////////////////
                                     Bestia VLigero_B = factory.getBestia(7);
+                                    ArrayList<VLigero_B> ligero= new ArrayList<>();
                                     while (ops != 3) {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -908,10 +916,10 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                VLigero_B.V_construccion();
+                                                ligero=VLigero_B.V_construccion(Centro1);
                                                 break;
                                             case 2:
-                                                VLigero_B.V_atacar();
+                                                VLigero_B.V_atacar(ligero, Centro1);
                                                 break;
                                         }
                                     }
@@ -990,7 +998,6 @@ public class Menu {
             while (op != 5) {
                 Humano Centro_H = factory1.getHumano(8);
                 Centro_H.mostrarCH(Centro1);
-
                 System.out.println("\n\t\t1. Crear recolectores.");
                 System.out.println("\t\t2. Formar milicia.");
                 System.out.println("\t\t3. Construir vehiculos de ataque.");
@@ -1016,7 +1023,7 @@ public class Menu {
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Humano madera = factory1.getHumano(1);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de madera por $300 de piedra y de hierro.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de madera por $300 de piedra y de hierro. ");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
@@ -1042,7 +1049,7 @@ public class Menu {
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Humano piedra = factory1.getHumano(2);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de piedra por $300 de madera y de hierro.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de piedra por $300 de madera y de hierro. ");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
@@ -1111,22 +1118,23 @@ public class Menu {
                                     ops = 5;
                                     ///////////////////////////////////////////////////////////////////
                                     Humano soldados = factory1.getHumano(4);
+                                    ArrayList<Soldados> SOLDADO= new ArrayList<>();
                                     while (ops != 4) {
-                                        System.out.println("\n\t\t1. Comenzar a entrenar. $400 de madera y piedra");
-                                        System.out.println("\t\t2. Comenzar ataque. $200 piedra y de hierro");
-                                        System.out.println("\t\t3. Comenzar defenza. $100 hierro y madera.");
+                                        System.out.println("\n\t\t1. Comenzar a entrenar. $400 de madera y piedra.");
+                                        System.out.println("\t\t2. Comenzar ataque. $200 piedra y de hierro.");
+                                        System.out.println("\t\t3. Comenzar a defender. $100 hierro y madera.");
                                         System.out.println("\t\t4. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                soldados.M_entrenar();
+                                                SOLDADO=soldados.M_entrenar(Centro1);
                                                 break;
                                             case 2:
-                                                soldados.M_atacar();
+                                                soldados.M_atacar(SOLDADO,Centro1);
                                                 break;
                                             case 3:
-                                                soldados.M_defender();
+                                                soldados.M_defender(SOLDADO, Centro1);
                                                 break;
                                         }
                                     }
@@ -1136,22 +1144,23 @@ public class Menu {
                                     ops = 5;
                                     ///////////////////////////////////////////////////////////////////
                                     Humano especialista = factory1.getHumano(5);
+                                    ArrayList<Especialista> Especial= new ArrayList<>();
                                     while (ops != 4) {
-                                        System.out.println("\n\t\t1. Comenzar a entrenar. $600 de madera y piedra");
-                                        System.out.println("\t\t2. Comenzar ataque. $300 piedra y de hierro");
+                                        System.out.println("\n\t\t1. Comenzar a entrenar. $600 de madera y piedra.");
+                                        System.out.println("\t\t2. Comenzar ataque. $300 piedra y de hierro.");
                                         System.out.println("\t\t3. Comenzar defenza. $200 hierro y madera.");
                                         System.out.println("\t\t4. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                especialista.M_entrenar();
+                                                Especial=especialista.M_entrenarE(Centro1);
                                                 break;
                                             case 2:
-                                                especialista.M_atacar();
+                                                especialista.M_atacarE(Especial,Centro1);
                                                 break;
                                             case 3:
-                                                especialista.M_defender();
+                                                especialista.M_defenderE(Especial, Centro1);
                                                 break;
                                         }
                                     }
@@ -1178,39 +1187,40 @@ public class Menu {
                                     ops = 4;
                                     ///////////////////////////////////////////////////////////////////
                                     Humano tanque = factory1.getHumano(6);
+                                    ArrayList<VPesado_H> pesado= new ArrayList<>();
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Construir vehiculo.");
-                                        System.out.println("\t\t2. Comenzar ataque.");
+                                        System.out.println("\n\t\t1. Construir vehiculo. $50 hierro y madera.");
+                                        System.out.println("\t\t2. Comenzar ataque. $100 piedra y de hierro.");
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                tanque.V_construccion();
+                                                pesado=tanque.V_construccionP(Centro1);
                                                 break;
                                             case 2:
-                                                tanque.V_atacar();
+                                                tanque.V_atacarP(pesado, Centro1);
                                                 break;
                                         }
                                     }
                                     break;
                                 case 2:
-                                    //RECOLECTOR
                                     ops = 4;
                                     ///////////////////////////////////////////////////////////////////
                                     Humano moto = factory1.getHumano(7);
+                                    ArrayList<VLigero_H> ligero= new ArrayList<>();
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Construir vehiculo.");
-                                        System.out.println("\t\t2. Comenzar ataque.");
+                                        System.out.println("\n\t\t1. Construir vehiculo. $100 hierro y piedra.");
+                                        System.out.println("\t\t2. Comenzar ataque. $105 madera y piedra.");
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                moto.V_construccion();
+                                                ligero=moto.V_construccion(Centro1);
                                                 break;
                                             case 2:
-                                                moto.V_atacar();
+                                                moto.V_atacar(ligero, Centro1);
                                                 break;
                                         }
                                     }
@@ -1225,43 +1235,40 @@ public class Menu {
                         }
                         break;
                     case 4:
-                        int num=3;
-                        while(num!=2){
+                        int num = 3;
+                        while (num != 2) {
                             System.out.println("\t\tSeguro que quiere hacer mejoras?");
                             System.out.println("\t\t1. Si");
                             System.out.println("\t\t2. No");
                             System.out.print("\n\t\tTu eleccion: ");
                             //System.out.println(Centro1.get(3));
-                            num=text.nextInt();
-                            switch(num){
+                            num = text.nextInt();
+                            switch (num) {
                                 case 1:
-                                    if(Centro1.get(3) == 10000){
+                                    if (Centro1.get(3) == 10000) {
                                         if (Centro1.get(0) >= 1650 && Centro1.get(1) >= 1650 && Centro1.get(2) >= 1650) {
                                             Centro_H.mejorarCH(1, Centro1);
-                                        }
-                                        else{
+                                        } else {
                                             System.out.println("\n\t\tREY, NO TIENE SUFICIENTES MATERIALES.");
                                         }
                                     }
-                                    if(Centro1.get(3)==11000){
+                                    if (Centro1.get(3) == 11000) {
                                         if (Centro1.get(0) >= 1895 && Centro1.get(1) >= 1895 && Centro1.get(2) >= 1895) {
                                             Centro_H.mejorarCH(2, Centro1);
-                                        }
-                                        else{
+                                        } else {
                                             System.out.println("\n\t\tREY, NO TIENE SUFICIENTES MATERIALES.");
                                         }
                                     }
-                                    if(Centro1.get(3)==14300){
+                                    if (Centro1.get(3) == 14300) {
                                         if (Centro1.get(0) >= 2274 && Centro1.get(1) >= 2274 && Centro1.get(2) >= 2274) {
                                             Centro_H.mejorarCH(3, Centro1);
-                                        }
-                                        else{
+                                        } else {
                                             System.out.println("\n\t\tREY, NO TIENE SUFICIENTES MATERIALES.");
                                         }
                                     }
                                     break;
                                 case 2:
-                                    System.out.println("\t\tAccion terminada.");
+                                    System.out.println("\n\t\tAccion terminada.");
                                     break;
                             }
                         }
@@ -1284,7 +1291,7 @@ public class Menu {
                 Esqueleto Centro_E = factory1.getEsqueleto(8);
                 Centro_E.mostrarCE(Centro1);
 
-                System.out.println("\n\t\t1. Crear recolectores.");
+                System.out.println("\n\t\t1. Crear recolectores. ");
                 System.out.println("\t\t2. Formar milicia.");
                 System.out.println("\t\t3. Construir vehiculos de ataque.");
                 System.out.println("\t\t4. Mejorar centro de mando.");
@@ -1308,7 +1315,7 @@ public class Menu {
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Esqueleto plata = factory1.getEsqueleto(1);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de plata por $200 de oro y de diamante.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
@@ -1333,7 +1340,7 @@ public class Menu {
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Esqueleto oro = factory1.getEsqueleto(2);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de oro por $200 de plata y de diamante.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
@@ -1358,7 +1365,7 @@ public class Menu {
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Esqueleto diamante = factory1.getEsqueleto(3);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de diamante por $200 de oro y de plata.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
@@ -1401,6 +1408,7 @@ public class Menu {
                                     ops = 5;
                                     ///////////////////////////////////////////////////////////////////
                                     Esqueleto horda = factory1.getEsqueleto(4);
+                                    ArrayList<Horda> SOLDADOSE= new ArrayList<>();
                                     while (ops != 4) {
                                         System.out.println("\n\t\t1. Comenzar a entrenar.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -1410,13 +1418,13 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                horda.M_entrenar();
+                                                SOLDADOSE=horda.M_entrenar(Centro1);
                                                 break;
                                             case 2:
-                                                horda.M_atacar();
+                                                horda.M_atacar(SOLDADOSE, Centro1);
                                                 break;
                                             case 3:
-                                                horda.M_defender();
+                                                horda.M_defender(SOLDADOSE, Centro1);
                                                 break;
                                         }
                                     }
@@ -1426,6 +1434,7 @@ public class Menu {
                                     ops = 5;
                                     ///////////////////////////////////////////////////////////////////
                                     Esqueleto colosal = factory1.getEsqueleto(5);
+                                    ArrayList<EsqueletoColosal> ESPECIALE= new ArrayList<>();
                                     while (ops != 4) {
                                         System.out.println("\n\t\t1. Comenzar a entrenar.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -1435,13 +1444,13 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                colosal.M_entrenar();
+                                                ESPECIALE=colosal.M_entrenarE(Centro1);
                                                 break;
                                             case 2:
-                                                colosal.M_atacar();
+                                                colosal.M_atacarE(ESPECIALE, Centro1);
                                                 break;
                                             case 3:
-                                                colosal.M_defender();
+                                                colosal.M_defenderE(ESPECIALE, Centro1);
                                                 break;
                                         }
                                     }
@@ -1469,6 +1478,7 @@ public class Menu {
                                     ops = 4;
                                     ///////////////////////////////////////////////////////////////////
                                     Esqueleto tanqueE = factory1.getEsqueleto(6);
+                                    ArrayList<VPesado_E> pesado= new ArrayList<>();
                                     while (ops != 3) {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -1477,10 +1487,10 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                tanqueE.V_construccion();
+                                                pesado=tanqueE.V_construccionP(Centro1);
                                                 break;
                                             case 2:
-                                                tanqueE.V_atacar();
+                                                tanqueE.V_atacarP(pesado, Centro1);
                                                 break;
                                         }
                                     }
@@ -1490,6 +1500,7 @@ public class Menu {
                                     ops = 4;
                                     ///////////////////////////////////////////////////////////////////
                                     Esqueleto bici = factory1.getEsqueleto(7);
+                                    ArrayList<VLigero_E> ligero= new ArrayList<>();
                                     while (ops != 3) {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -1498,10 +1509,10 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                bici.V_construccion();
+                                                ligero=bici.V_construccion(Centro1);
                                                 break;
                                             case 2:
-                                                bici.V_atacar();
+                                                bici.V_atacar(ligero, Centro1);
                                                 break;
                                         }
                                     }
@@ -1516,43 +1527,40 @@ public class Menu {
                         }
                         break;
                     case 4:
-                        int num=3;
-                        while(num!=2){
+                        int num = 3;
+                        while (num != 2) {
                             System.out.println("\t\tSeguro que quiere hacer mejoras?");
                             System.out.println("\t\t1. Si");
                             System.out.println("\t\t2. No");
                             System.out.print("\n\t\tTu eleccion: ");
                             //System.out.println(Centro1.get(3));
-                            num=text.nextInt();
-                            switch(num){
+                            num = text.nextInt();
+                            switch (num) {
                                 case 1:
-                                    if(Centro1.get(3) == 10000){
+                                    if (Centro1.get(3) == 10000) {
                                         if (Centro1.get(0) >= 1650 && Centro1.get(1) >= 1650 && Centro1.get(2) >= 1650) {
                                             Centro_E.mejorarCE(1, Centro1);
-                                        }
-                                        else{
+                                        } else {
                                             System.out.println("\n\t\tREY, NO TIENE SUFICIENTES MATERIALES.");
                                         }
                                     }
-                                    if(Centro1.get(3)==11000){
+                                    if (Centro1.get(3) == 11000) {
                                         if (Centro1.get(0) >= 1895 && Centro1.get(1) >= 1895 && Centro1.get(2) >= 1895) {
                                             Centro_E.mejorarCE(2, Centro1);
-                                        }
-                                        else{
+                                        } else {
                                             System.out.println("\n\t\tREY, NO TIENE SUFICIENTES MATERIALES.");
                                         }
                                     }
-                                    if(Centro1.get(3)==14300){
+                                    if (Centro1.get(3) == 14300) {
                                         if (Centro1.get(0) >= 2274 && Centro1.get(1) >= 2274 && Centro1.get(2) >= 2274) {
                                             Centro_E.mejorarCE(3, Centro1);
-                                        }
-                                        else{
+                                        } else {
                                             System.out.println("\n\t\tREY, NO TIENE SUFICIENTES MATERIALES.");
                                         }
                                     }
                                     break;
                                 case 2:
-                                    System.out.println("\t\tAccion terminada.");
+                                    System.out.println("\n\t\tAccion terminada.");
                                     break;
                             }
                         }
@@ -1572,7 +1580,7 @@ public class Menu {
         if (razavar == 3) {
             //BESTIA
             while (op != 5) {
-                Bestia Centro_B = factory1.getBestia(8);
+                Bestia Centro_B = factory.getBestia(8);
                 Centro_B.mostrarCB(Centro1);
 
                 System.out.println("\n\t\t1. Crear recolectores.");
@@ -1698,6 +1706,7 @@ public class Menu {
                                     ops = 5;
                                     ///////////////////////////////////////////////////////////////////
                                     Bestia tribu = factory1.getBestia(4);
+                                    ArrayList<Tribu> TRI= new ArrayList<>();
                                     while (ops != 4) {
                                         System.out.println("\n\t\t1. Comenzar a entrenar.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -1707,13 +1716,13 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                tribu.M_entrenar();
+                                                TRI=tribu.M_entrenar(Centro1);
                                                 break;
                                             case 2:
-                                                tribu.M_atacar();
+                                                tribu.M_atacar(TRI, Centro1);
                                                 break;
                                             case 3:
-                                                tribu.M_defender();
+                                                tribu.M_defender(TRI, Centro1);
                                                 break;
                                         }
                                     }
@@ -1723,6 +1732,7 @@ public class Menu {
                                     ops = 5;
                                     ///////////////////////////////////////////////////////////////////
                                     Bestia Bmayor = factory1.getBestia(5);
+                                    ArrayList<BestiaMayor> BM= new ArrayList<>();
                                     while (ops != 4) {
                                         System.out.println("\n\t\t1. Comenzar a entrenar.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -1732,13 +1742,13 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                Bmayor.M_entrenar();
+                                                BM=Bmayor.M_entrenarE(Centro1);
                                                 break;
                                             case 2:
-                                                Bmayor.M_atacar();
+                                                Bmayor.M_atacarE(BM, Centro1);
                                                 break;
                                             case 3:
-                                                Bmayor.M_defender();
+                                                Bmayor.M_defenderE(BM, Centro1);
                                                 break;
                                         }
                                     }
@@ -1767,6 +1777,7 @@ public class Menu {
                                     ///////////////////////////////////////////////////////////////////
                                     //factory = FactoryProducer.getFactory(3);
                                     Bestia VPesado_B = factory1.getBestia(6);
+                                    ArrayList<VPesado_B> pesado= new ArrayList<>();
                                     while (ops != 3) {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -1775,10 +1786,10 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                VPesado_B.V_construccion();
+                                                pesado=VPesado_B.V_construccionP(Centro1);
                                                 break;
                                             case 2:
-                                                VPesado_B.V_atacar();
+                                                VPesado_B.V_atacarP(pesado, Centro1);
                                                 break;
                                         }
                                     }
@@ -1788,6 +1799,7 @@ public class Menu {
                                     ops = 4;
                                     ///////////////////////////////////////////////////////////////////
                                     Bestia VLigero_B = factory1.getBestia(7);
+                                    ArrayList<VLigero_B> ligero= new ArrayList<>();
                                     while (ops != 3) {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -1796,10 +1808,10 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                VLigero_B.V_construccion();
+                                                ligero=VLigero_B.V_construccion(Centro1);
                                                 break;
                                             case 2:
-                                                VLigero_B.V_atacar();
+                                                VLigero_B.V_atacar(ligero, Centro1);
                                                 break;
                                         }
                                     }
@@ -1814,37 +1826,34 @@ public class Menu {
                         }
                         break;
                     case 4:
-                        int num=3;
-                        while(num!=2){
+                        int num = 3;
+                        while (num != 2) {
                             System.out.println("\t\tSeguro que quiere hacer mejoras?");
                             System.out.println("\t\t1. Si");
                             System.out.println("\t\t2. No");
                             System.out.print("\n\t\tTu eleccion: ");
                             //System.out.println(Centro1.get(3));
-                            num=text.nextInt();
-                            switch(num){
+                            num = text.nextInt();
+                            switch (num) {
                                 case 1:
-                                    if(Centro1.get(3) == 10000){
+                                    if (Centro1.get(3) == 10000) {
                                         if (Centro1.get(0) >= 1650 && Centro1.get(1) >= 1650 && Centro1.get(2) >= 1650) {
                                             Centro_B.mejorarCB(1, Centro1);
-                                        }
-                                        else{
+                                        } else {
                                             System.out.println("\n\t\tREY, NO TIENE SUFICIENTES MATERIALES.");
                                         }
                                     }
-                                    if(Centro1.get(3)==11000){
+                                    if (Centro1.get(3) == 11000) {
                                         if (Centro1.get(0) >= 1895 && Centro1.get(1) >= 1895 && Centro1.get(2) >= 1895) {
                                             Centro_B.mejorarCB(2, Centro1);
-                                        }
-                                        else{
+                                        } else {
                                             System.out.println("\n\t\tREY, NO TIENE SUFICIENTES MATERIALES.");
                                         }
                                     }
-                                    if(Centro1.get(3)==14300){
+                                    if (Centro1.get(3) == 14300) {
                                         if (Centro1.get(0) >= 2274 && Centro1.get(1) >= 2274 && Centro1.get(2) >= 2274) {
                                             Centro_B.mejorarCB(3, Centro1);
-                                        }
-                                        else{
+                                        } else {
                                             System.out.println("\n\t\tREY, NO TIENE SUFICIENTES MATERIALES.");
                                         }
                                     }
