@@ -15,6 +15,7 @@ public class Centro_B implements Bestia {
 
     int alma = 500, cristal = 500, luz = 500;
     int MAXalma = 10000, MAXcristal = 5000, MAXluz = 3000;
+    int vida=2500;
     
     @Override
     public ArrayList<Integer> generarCB() {
@@ -25,6 +26,7 @@ public class Centro_B implements Bestia {
         Centro.add(MAXalma);
         Centro.add(MAXcristal);
         Centro.add(MAXluz);
+        Centro.add(vida);
         System.out.println("\n\t\tRey, ahora tiene un centro de mando bestial.");
         return Centro;
     }
@@ -82,6 +84,8 @@ public class Centro_B implements Bestia {
 
     @Override
     public void mostrarCB(ArrayList<Integer> Centro) {
+        System.out.println("\n\t\t\t\t\t\t+-----------------------------------------------+");
+        System.out.println("\n\t\t\t\t\t\tCentro de mando: "+Centro.get(6)+" HP");
         System.out.println("\n\t\t\t\t\t\t+-----------------------------------------------+");
         System.out.println("\t\t\t\t\t\t|  Cantidad de recursos  |"+"   Capacidad maxima   |");
         System.out.println("\t\t\t\t\t\t|                        |"+"    \t\t\t|");

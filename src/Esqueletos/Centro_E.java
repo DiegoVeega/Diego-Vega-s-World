@@ -12,19 +12,98 @@ import java.util.ArrayList;
  * @author diego
  */
 public class Centro_E implements Esqueleto{
+    /**
+    private int vida=2500;
+    private int plata=500;
+    private int oro=500;
+    private int diamante=500;
+    private int MAXplata=10000;
+    private int MAXoro=5000;
+    private int MAXdiamante=3000;
     
+    public Centro_E() {
+    }
+    
+    public Centro_E(int vida, int plata, int oro, int diamante, int MAXplata, int MAXoro, int MAXdiamante){
+        this.vida=vida;
+        this.plata=plata;
+        this.oro=oro;
+        this.diamante=diamante;
+        this.MAXplata=MAXplata;
+        this.MAXoro=MAXoro;
+        this.MAXdiamante=MAXdiamante;
+    }
+
+    public int getVida() {
+        return vida;
+    }
+
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
+
+    public int getPlata() {
+        return plata;
+    }
+
+    public void setPlata(int plata) {
+        this.plata = plata;
+    }
+
+    public int getOro() {
+        return oro;
+    }
+
+    public void setOro(int oro) {
+        this.oro = oro;
+    }
+
+    public int getDiamante() {
+        return diamante;
+    }
+
+    public void setDiamante(int diamante) {
+        this.diamante = diamante;
+    }
+
+    public int getMAXplata() {
+        return MAXplata;
+    }
+
+    public void setMAXplata(int MAXplata) {
+        this.MAXplata = MAXplata;
+    }
+
+    public int getMAXoro() {
+        return MAXoro;
+    }
+
+    public void setMAXoro(int MAXoro) {
+        this.MAXoro = MAXoro;
+    }
+
+    public int getMAXdiamante() {
+        return MAXdiamante;
+    }
+
+    public void setMAXdiamante(int MAXdiamante) {
+        this.MAXdiamante = MAXdiamante;
+    }
+    */
     int plata = 500, oro = 500, diamante = 500;
     int MAXplata = 10000, MAXoro = 5000, MAXdiamante = 3000;
+    int vida=2500;
 
     @Override
     public ArrayList<Integer> generarCE() {
         ArrayList<Integer> Centro = new ArrayList<>();
-        Centro.add(plata);
-        Centro.add(oro);
-        Centro.add(diamante);
-        Centro.add(MAXplata);
-        Centro.add(MAXoro);
-        Centro.add(MAXdiamante);
+        Centro.add(plata);//0
+        Centro.add(oro);//1
+        Centro.add(diamante);//2
+        Centro.add(MAXplata);//3
+        Centro.add(MAXoro);//4
+        Centro.add(MAXdiamante);//5
+        Centro.add(vida);//6
         System.out.println("\n\t\tRey, ahora tiene un centro de mando Esqueletico.");
         return Centro;
     }
@@ -83,6 +162,7 @@ public class Centro_E implements Esqueleto{
     @Override
     public void mostrarCE(ArrayList<Integer> Centro) {
         System.out.println("\n\t\t\t\t\t\t+-----------------------------------------------+");
+        System.out.println("\n\t\t\t\t\t\tCentro de mando: "+Centro.get(6)+" HP");
         System.out.println("\t\t\t\t\t\t|  Cantidad de recursos  |"+"   Capacidad maxima   |");
         System.out.println("\t\t\t\t\t\t|                        |"+"    \t\t\t|");
         System.out.println("\t\t\t\t\t\t|  Alma: "+Centro.get(0)+"       \t"+"\t"+Centro.get(3)+"\t\t|");
