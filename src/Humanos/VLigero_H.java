@@ -13,8 +13,6 @@ import java.util.ArrayList;
  */
 public class VLigero_H implements Humano{
 
-    
-
     @Override
     public void mostrarCH(ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
