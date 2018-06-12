@@ -145,7 +145,7 @@ public class Menu {
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Humano piedra = factory.getHumano(2);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de piedra por $300 de madera y de hierro. ");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
@@ -171,7 +171,7 @@ public class Menu {
                                     ///////////////////////////////////////////////////////////////////
                                     Humano hierro = factory.getHumano(3);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de hierro por $300 de piedra y de madera.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
@@ -384,7 +384,7 @@ public class Menu {
                 Esqueleto Centro_E = factory.getEsqueleto(8);
                 Centro_E.mostrarCE(Centro1);
 
-                System.out.println("\n\t\t1. Crear recolectores.");
+                System.out.println("\n\t\t1. Crear recolectores. ");
                 System.out.println("\t\t2. Formar milicia.");
                 System.out.println("\t\t3. Construir vehiculos de ataque.");
                 System.out.println("\t\t4. Mejorar centro de mando.");
@@ -408,7 +408,7 @@ public class Menu {
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Esqueleto plata = factory.getEsqueleto(1);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de plata por $200 de oro y de diamante.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
@@ -433,7 +433,7 @@ public class Menu {
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Esqueleto oro = factory.getEsqueleto(2);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de oro por $200 de plata y de diamante.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
@@ -458,7 +458,7 @@ public class Menu {
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Esqueleto diamante = factory.getEsqueleto(3);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de diamante por $200 de oro y de plata.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
