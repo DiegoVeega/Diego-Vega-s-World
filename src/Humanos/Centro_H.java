@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class Centro_H implements Humano{
     
-    int madera = 500, piedra = 500, hierro = 500;
+    int madera = 1700, piedra = 1700, hierro = 1700;
     int MAXmadera = 10000, MAXpiedra = 5000, MAXhierro = 3000;
     int vida=2500;
     
@@ -27,7 +27,7 @@ public class Centro_H implements Humano{
         Centro.add(MAXpiedra);//4
         Centro.add(MAXhierro);//5
         Centro.add(vida);//6
-        System.out.println("\n\t\tRey, ahora tiene un centro de mando Humano.");
+        System.out.println("\n\t\t\t\tRey, ahora tiene un centro de mando Humano.\n");
         return Centro;    
     }
 

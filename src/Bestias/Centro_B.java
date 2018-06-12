@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class Centro_B implements Bestia {
 
-    int alma = 500, cristal = 500, luz = 500;
+    int alma = 1700, cristal = 1700, luz = 1700;
     int MAXalma = 10000, MAXcristal = 5000, MAXluz = 3000;
     int vida=2500;
     
@@ -27,7 +27,7 @@ public class Centro_B implements Bestia {
         Centro.add(MAXcristal);
         Centro.add(MAXluz);
         Centro.add(vida);
-        System.out.println("\n\t\tRey, ahora tiene un centro de mando bestial.");
+        System.out.println("\n\t\t\t\tRey, ahora tiene un centro de mando bestial.\n");
         return Centro;
     }
 
