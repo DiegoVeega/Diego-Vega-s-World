@@ -65,7 +65,10 @@ public class Tribu implements Bestia {
     //////////////////////////////////////////////////////////////////
     //METODOS MILICIA.
     @Override
-    public ArrayList<Tribu> M_entrenar() {
+    public ArrayList<Tribu> M_entrenar(ArrayList<Integer> Centro) {
+        Centro.set(0,Centro.get(0)-400);
+        Centro.set(1,Centro.get(1)-400);
+        
         ArrayList<Tribu> Milicia = new ArrayList<>();
         Tribu tribu = new Tribu();
         entrenado = true;
@@ -75,7 +78,11 @@ public class Tribu implements Bestia {
     }
 
     @Override
-    public void M_atacar(ArrayList<Tribu> Tribu) {
+    public void M_atacar(ArrayList<Tribu> Tribu,ArrayList<Integer> Centro) {
+        
+        Centro.set(1,Centro.get(1)-200);
+        Centro.set(2,Centro.get(2)-200);
+        
         Scanner text=new Scanner(System.in);
         int op;
         ArrayList<Tribu> Milicia = new ArrayList<>();
@@ -91,9 +98,13 @@ public class Tribu implements Bestia {
         System.out.println("Se enviara a: "+Milicia.get(op-1));
         Milicia.remove(op-1);
     }
-
+    
     @Override
-    public void M_defender(ArrayList<Tribu> Tribu) {
+    public void M_defender(ArrayList<Tribu> Tribu, ArrayList<Integer> Centro) {
+        
+        Centro.set(0,Centro.get(0)-100);
+        Centro.set(2,Centro.get(2)-100);
+        
         Scanner text=new Scanner(System.in);
         int op;
         ArrayList<Tribu> Milicia = new ArrayList<>();
@@ -138,39 +149,39 @@ public class Tribu implements Bestia {
     public ArrayList<Integer> mejorarCB(int num, ArrayList<Integer> Centro) {
         return null;
     }
-
+    
     @Override
-    public ArrayList<BestiaMayor> M_entrenarE() {
-        return null;
-    }
-
-    @Override
-    public void M_atacarE(ArrayList<BestiaMayor> BestiaMayor) {
-        
-    }
-
-    @Override
-    public void M_defenderE(ArrayList<BestiaMayor> BestiaMayor) {
-        
-    }
-
-    @Override
-    public ArrayList<VLigero_B> V_construccion() {
+    public ArrayList<BestiaMayor> M_entrenarE(ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void V_atacar(ArrayList<VLigero_B> VLigero_B) {
+    public void M_atacarE(ArrayList<BestiaMayor> BestiaMayor, ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<VPesado_B> V_construccionP() {
+    public void M_defenderE(ArrayList<BestiaMayor> BestiaMayor, ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void V_atacarP(ArrayList<VPesado_B> VPesado_B) {
+    public ArrayList<VLigero_B> V_construccion(ArrayList<Integer> Centro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void V_atacar(ArrayList<VLigero_B> VLigero_B, ArrayList<Integer> Centro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<VPesado_B> V_construccionP(ArrayList<Integer> Centro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void V_atacarP(ArrayList<VPesado_B> VPesado_B, ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
