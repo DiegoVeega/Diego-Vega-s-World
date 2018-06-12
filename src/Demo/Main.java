@@ -80,8 +80,7 @@ public class Main {
                 break;
         }
         
-        int RUN=1;
-        
+        //int RUN=1;
         ArrayList<Integer> Centros;
         
         System.out.print("\n\t\tRey "+Rey1+" es su turno.\n");
@@ -113,7 +112,7 @@ public class Main {
                 Centro1=Centros;
                 razavar=RAZAR1;
             }
-        }while(RUN!=0);
+        }while(Centro1.get(6)!=0 && Centro2.get(6) !=0);
                 
                 
         //AGREGAR VARIABLE "JUGADOR" Y HACER QUE DEFINA QUIEN HA GANADO LA PARTIDA.
