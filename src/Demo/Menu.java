@@ -55,7 +55,7 @@ public class Menu {
         }
         return Centro1;
     }
-    
+
     public ArrayList<Integer> seleccionRaza2(int raza) {
         ArrayList<Integer> Centro2 = new ArrayList<>();
         if (raza == 1) {
@@ -81,22 +81,23 @@ public class Menu {
         }
         return Centro2;
     }
-    
-    public void Opciones(int razavar, ArrayList<Integer> Centro1,ArrayList<Integer> Centro2) {
-        int op = 5;
+
+    //OP JUGADOR1
+    public void Opciones(int razavar, ArrayList<Integer> Centro1, ArrayList<Integer> Centro2) {
+        int op = 6;
         int ops;
         Scanner text = new Scanner(System.in);
 
         if (razavar == 1) {
             //HUMANO
-            while (op != 4) {
+            while (op != 5) {
                 Humano Centro_H = factory.getHumano(8);
                 Centro_H.mostrarCH(Centro1);
-                
                 System.out.println("\n\t\t1. Crear recolectores.");
                 System.out.println("\t\t2. Formar milicia.");
                 System.out.println("\t\t3. Construir vehiculos de ataque.");
-                System.out.println("\t\t4. Terminar turno.");
+                System.out.println("\t\t4. Mejorar centro de mando.");
+                System.out.println("\t\t5. Terminar turno.");
                 System.out.print("\n\t\tTu seleccion: ");
                 op = text.nextInt();
                 switch (op) {
@@ -311,6 +312,9 @@ public class Menu {
                         }
                         break;
                     case 4:
+
+                        break;
+                    case 5:
                         System.out.println("\n\t\t:::::::::::::::::::::::::::...::...::::.......::CAMBIO::DE::TURNOS::......::::...::...::::::::::::::::::::::::::");
                         break;
                     default:
@@ -324,14 +328,15 @@ public class Menu {
 
         if (razavar == 2) {
             //ESQUELETO
-            while (op != 4) {
+            while (op != 5) {
                 Esqueleto Centro_E = factory.getEsqueleto(8);
                 Centro_E.mostrarCE(Centro1);
-                
+
                 System.out.println("\n\t\t1. Crear recolectores.");
                 System.out.println("\t\t2. Formar milicia.");
                 System.out.println("\t\t3. Construir vehiculos de ataque.");
-                System.out.println("\t\t4. Terminar turno.");
+                System.out.println("\t\t4. Mejorar centro de mando.");
+                System.out.println("\t\t5. Terminar turno.");
                 System.out.print("\n\t\tTu seleccion: ");
                 op = text.nextInt();
                 switch (op) {
@@ -544,6 +549,48 @@ public class Menu {
                         }
                         break;
                     case 4:
+                        int num=3;
+                        while(num!=2){
+                            System.out.println("\t\tSeguro que quiere hacer mejoras?");
+                            System.out.println("\t\t1. Si");
+                            System.out.println("\t\t2. No");
+                            System.out.print("\n\t\tTu eleccion: ");
+                            //System.out.println(Centro1.get(3));
+                            num=text.nextInt();
+                            switch(num){
+                                case 1:
+                                    if(Centro1.get(3) == 10000){
+                                        if (Centro1.get(0) >= 1650 && Centro1.get(1) >= 1650 && Centro1.get(2) >= 1650) {
+                                            Centro_E.mejorarCE(1, Centro1);
+                                        }
+                                        else{
+                                            System.out.println("\t\tRey, no tiene suficientes materiales.");
+                                        }
+                                    }
+                                    if(Centro1.get(3)==11000){
+                                        if (Centro1.get(0) >= 1895 && Centro1.get(1) >= 1895 && Centro1.get(2) >= 1895) {
+                                            Centro_E.mejorarCE(2, Centro1);
+                                        }
+                                        else{
+                                            System.out.println("\t\tRey, no tiene suficientes materiales.");
+                                        }
+                                    }
+                                    if(Centro1.get(3)==14300){
+                                        if (Centro1.get(0) >= 2274 && Centro1.get(1) >= 2274 && Centro1.get(2) >= 2274) {
+                                            Centro_E.mejorarCE(3, Centro1);
+                                        }
+                                        else{
+                                            System.out.println("\t\tRey, no tiene suficientes materiales.");
+                                        }
+                                    }
+                                    break;
+                                case 2:
+                                    System.out.println("\t\tAccion terminada.");
+                                    break;
+                            }
+                        }
+                        break;
+                    case 5:
                         System.out.println("\n\t\t:::::::::::::::::::::::::::...::...::::.......::CAMBIO::DE::TURNOS::......::::...::...::::::::::::::::::::::::::");
                         break;
                     default:
@@ -554,249 +601,253 @@ public class Menu {
 
             }
         }
+            
+    if (razavar == 3) {
+                //BESTIA
+                while (op != 4) {
+                    Bestia Centro_B = factory.getBestia(8);
+                    Centro_B.mostrarCB(Centro1);
 
-        if (razavar == 3) {
-            //BESTIA
-            while (op != 4) {
-                Bestia Centro_B = factory.getBestia(8);
-                Centro_B.mostrarCB(Centro1);
-                
-                System.out.println("\n\t\t1. Crear recolectores.");
-                System.out.println("\t\t2. Formar milicia.");
-                System.out.println("\t\t3. Construir vehiculos de ataque.");
-                System.out.println("\t\t4. Terminar turno.");
-                System.out.print("\n\t\tTu seleccion: ");
-                op = text.nextInt();
-                switch (op) {
-                    case 1:
-                        ops = 5;
-                        while (ops != 4) {
-                            System.out.println("\n\t\tQue tipo de recolector desea? ");
-                            System.out.println("\t\t1. Recolector de almas.");
-                            System.out.println("\t\t2. Recolector de cristales.");
-                            System.out.println("\t\t3. Recolector de luz.");
-                            System.out.println("\t\t4. Terminar accion.");
-                            System.out.print("\n\t\tTu seleccion: ");
-                            ops = text.nextInt();
-                            switch (ops) {
-                                case 1:
-                                    //RECOLECTOR
-                                    ops = 4;
-                                    ////////////////////////////////////////////////////////////////////////////////////
-                                    Bestia alma = factory.getBestia(1);
-                                    while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
-                                        System.out.println("\t\t2. Obetener lo recolectado.");
-                                        System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
-                                        ops = text.nextInt();
-                                        int cant1=0;
-                                        switch (ops) {
-                                            case 1:
-                                                cant1=alma.E_generar();
-                                                break;
-                                            case 2:
-                                                alma.E_recolectar(cant1, Centro);
-                                                break;
+                    System.out.println("\n\t\t1. Crear recolectores.");
+                    System.out.println("\t\t2. Formar milicia.");
+                    System.out.println("\t\t3. Construir vehiculos de ataque.");
+                    System.out.println("\t\t4. Terminar turno.");
+                    System.out.print("\n\t\tTu seleccion: ");
+                    op = text.nextInt();
+                    switch (op) {
+                        case 1:
+                            ops = 5;
+                            while (ops != 4) {
+                                System.out.println("\n\t\tQue tipo de recolector desea? ");
+                                System.out.println("\t\t1. Recolector de almas.");
+                                System.out.println("\t\t2. Recolector de cristales.");
+                                System.out.println("\t\t3. Recolector de luz.");
+                                System.out.println("\t\t4. Terminar accion.");
+                                System.out.print("\n\t\tTu seleccion: ");
+                                ops = text.nextInt();
+                                switch (ops) {
+                                    case 1:
+                                        //RECOLECTOR
+                                        ops = 4;
+                                        ////////////////////////////////////////////////////////////////////////////////////
+                                        Bestia alma = factory.getBestia(1);
+                                        while (ops != 3) {
+                                            System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                            System.out.println("\t\t2. Obetener lo recolectado.");
+                                            System.out.println("\t\t3. Terminar accion.");
+                                            System.out.println("\n\t\tTu eleccion: ");
+                                            ops = text.nextInt();
+                                            int cant1 = 0;
+                                            switch (ops) {
+                                                case 1:
+                                                    cant1 = alma.E_generar();
+                                                    break;
+                                                case 2:
+                                                    alma.E_recolectar(cant1, Centro);
+                                                    break;
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 2:
-                                    //RECOLECTOR
-                                    ops = 4;
-                                    ////////////////////////////////////////////////////////////////////////////////////
-                                    Bestia cristal = factory.getBestia(2);
-                                    while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
-                                        System.out.println("\t\t2. Obetener lo recolectado.");
-                                        System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
-                                        ops = text.nextInt();
-                                        int cant2=0;
-                                        switch (ops) {
-                                            case 1:
-                                                cant2=cristal.E_generar();
-                                                break;
-                                            case 2:
-                                                cristal.E_recolectar(cant2, Centro);
-                                                break;
+                                        break;
+                                    case 2:
+                                        //RECOLECTOR
+                                        ops = 4;
+                                        ////////////////////////////////////////////////////////////////////////////////////
+                                        Bestia cristal = factory.getBestia(2);
+                                        while (ops != 3) {
+                                            System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                            System.out.println("\t\t2. Obetener lo recolectado.");
+                                            System.out.println("\t\t3. Terminar accion.");
+                                            System.out.println("\n\t\tTu eleccion: ");
+                                            ops = text.nextInt();
+                                            int cant2 = 0;
+                                            switch (ops) {
+                                                case 1:
+                                                    cant2 = cristal.E_generar();
+                                                    break;
+                                                case 2:
+                                                    cristal.E_recolectar(cant2, Centro);
+                                                    break;
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    //RECOLECTOR
-                                    ops = 4;
-                                    ////////////////////////////////////////////////////////////////////////////////////
-                                    Bestia luz = factory.getBestia(3);
-                                    while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
-                                        System.out.println("\t\t2. Obetener lo recolectado.");
-                                        System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
-                                        ops = text.nextInt();
-                                        int cant3=0;
-                                        switch (ops) {
-                                            case 1:
-                                                cant3=luz.E_generar();
-                                                break;
-                                            case 2:
-                                                luz.E_recolectar(cant3, Centro);
-                                                break;
+                                        break;
+                                    case 3:
+                                        //RECOLECTOR
+                                        ops = 4;
+                                        ////////////////////////////////////////////////////////////////////////////////////
+                                        Bestia luz = factory.getBestia(3);
+                                        while (ops != 3) {
+                                            System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                            System.out.println("\t\t2. Obetener lo recolectado.");
+                                            System.out.println("\t\t3. Terminar accion.");
+                                            System.out.println("\n\t\tTu eleccion: ");
+                                            ops = text.nextInt();
+                                            int cant3 = 0;
+                                            switch (ops) {
+                                                case 1:
+                                                    cant3 = luz.E_generar();
+                                                    break;
+                                                case 2:
+                                                    luz.E_recolectar(cant3, Centro);
+                                                    break;
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    System.out.println("\n\t\tTermino accion en: Recolectores.");
-                                    break;
-                                default:
-                                    System.out.println("Ingrese opcion valida, por favor.");
-                                    break;
+                                        break;
+                                    case 4:
+                                        System.out.println("\n\t\tTermino accion en: Recolectores.");
+                                        break;
+                                    default:
+                                        System.out.println("Ingrese opcion valida, por favor.");
+                                        break;
+                                }
                             }
-                        }
-                        break;
-                    case 2:
-                        ops = 4;
-                        while (ops != 3) {
-                            System.out.println("\n\t\t1. Obtener Tribu bestial.");
-                            System.out.println("\t\t2. Obtener Bestia mayor.");
-                            System.out.println("\t\t3. Terminar accion.");
-                            System.out.print("\n\t\tTu seleccion: ");
-                            ops = text.nextInt();
-                            switch (ops) {
-                                case 1:
-                                    //ESCUADRON
-                                    ops = 5;
-                                    ///////////////////////////////////////////////////////////////////
-                                    Bestia tribu = factory.getBestia(4);
-                                    while (ops != 4) {
-                                        System.out.println("\n\t\t1. Comenzar a entrenar.");
-                                        System.out.println("\t\t2. Comenzar ataque.");
-                                        System.out.println("\t\t3. Comenzar defenza.");
-                                        System.out.println("\t\t4. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
-                                        ops = text.nextInt();
-                                        switch (ops) {
-                                            case 1:
-                                                tribu.M_entrenar();
-                                                break;
-                                            case 2:
-                                                tribu.M_atacar();
-                                                break;
-                                            case 3:
-                                                tribu.M_defender();
-                                                break;
+                            break;
+                        case 2:
+                            ops = 4;
+                            while (ops != 3) {
+                                System.out.println("\n\t\t1. Obtener Tribu bestial.");
+                                System.out.println("\t\t2. Obtener Bestia mayor.");
+                                System.out.println("\t\t3. Terminar accion.");
+                                System.out.print("\n\t\tTu seleccion: ");
+                                ops = text.nextInt();
+                                switch (ops) {
+                                    case 1:
+                                        //ESCUADRON
+                                        ops = 5;
+                                        ///////////////////////////////////////////////////////////////////
+                                        Bestia tribu = factory.getBestia(4);
+                                        while (ops != 4) {
+                                            System.out.println("\n\t\t1. Comenzar a entrenar.");
+                                            System.out.println("\t\t2. Comenzar ataque.");
+                                            System.out.println("\t\t3. Comenzar defenza.");
+                                            System.out.println("\t\t4. Terminar accion.");
+                                            System.out.println("\n\t\tTu eleccion: ");
+                                            ops = text.nextInt();
+                                            switch (ops) {
+                                                case 1:
+                                                    tribu.M_entrenar();
+                                                    break;
+                                                case 2:
+                                                    tribu.M_atacar();
+                                                    break;
+                                                case 3:
+                                                    tribu.M_defender();
+                                                    break;
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 2:
-                                    //ESPECIALISTA
-                                    ops = 5;
-                                    ///////////////////////////////////////////////////////////////////
-                                    Bestia Bmayor = factory.getBestia(5);
-                                    while (ops != 4) {
-                                        System.out.println("\n\t\t1. Comenzar a entrenar.");
-                                        System.out.println("\t\t2. Comenzar ataque.");
-                                        System.out.println("\t\t3. Comenzar defenza.");
-                                        System.out.println("\t\t4. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
-                                        ops = text.nextInt();
-                                        switch (ops) {
-                                            case 1:
-                                                Bmayor.M_entrenar();
-                                                break;
-                                            case 2:
-                                                Bmayor.M_atacar();
-                                                break;
-                                            case 3:
-                                                Bmayor.M_defender();
-                                                break;
+                                        break;
+                                    case 2:
+                                        //ESPECIALISTA
+                                        ops = 5;
+                                        ///////////////////////////////////////////////////////////////////
+                                        Bestia Bmayor = factory.getBestia(5);
+                                        while (ops != 4) {
+                                            System.out.println("\n\t\t1. Comenzar a entrenar.");
+                                            System.out.println("\t\t2. Comenzar ataque.");
+                                            System.out.println("\t\t3. Comenzar defenza.");
+                                            System.out.println("\t\t4. Terminar accion.");
+                                            System.out.println("\n\t\tTu eleccion: ");
+                                            ops = text.nextInt();
+                                            switch (ops) {
+                                                case 1:
+                                                    Bmayor.M_entrenar();
+                                                    break;
+                                                case 2:
+                                                    Bmayor.M_atacar();
+                                                    break;
+                                                case 3:
+                                                    Bmayor.M_defender();
+                                                    break;
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    System.out.println("\n\t\tTermino accione en: Milicia");
-                                    break;
-                                default:
-                                    System.out.println("Ingrese opcion valida, por favor.");
-                                    break;
+                                        break;
+                                    case 3:
+                                        System.out.println("\n\t\tTermino accione en: Milicia");
+                                        break;
+                                    default:
+                                        System.out.println("Ingrese opcion valida, por favor.");
+                                        break;
+                                }
                             }
-                        }
-                        break;
-                    case 3:
-                        ops = 4;
-                        while (ops != 3) {
-                            System.out.println("\n\t\t1. Obtener Tanque-bestia.");
-                            System.out.println("\t\t2. Obtener carreta-bestial.");
-                            System.out.println("\t\t3. Terminar accion.");
-                            System.out.print("\n\t\tTu seleccion: ");
-                            ops = text.nextInt();
-                            switch (ops) {
-                                case 1:
-                                    //Vehiculo
-                                    ops = 4;
-                                    ///////////////////////////////////////////////////////////////////
-                                    //factory = FactoryProducer.getFactory(3);
-                                    Bestia VPesado_B = factory.getBestia(6);
-                                    while (ops != 3) {
-                                        System.out.println("\n\t\t1. Construir vehiculo.");
-                                        System.out.println("\t\t2. Comenzar ataque.");
-                                        System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
-                                        ops = text.nextInt();
-                                        switch (ops) {
-                                            case 1:
-                                                VPesado_B.V_construccion();
-                                                break;
-                                            case 2:
-                                                VPesado_B.V_atacar();
-                                                break;
+                            break;
+                        case 3:
+                            ops = 4;
+                            while (ops != 3) {
+                                System.out.println("\n\t\t1. Obtener Tanque-bestia.");
+                                System.out.println("\t\t2. Obtener carreta-bestial.");
+                                System.out.println("\t\t3. Terminar accion.");
+                                System.out.print("\n\t\tTu seleccion: ");
+                                ops = text.nextInt();
+                                switch (ops) {
+                                    case 1:
+                                        //Vehiculo
+                                        ops = 4;
+                                        ///////////////////////////////////////////////////////////////////
+                                        //factory = FactoryProducer.getFactory(3);
+                                        Bestia VPesado_B = factory.getBestia(6);
+                                        while (ops != 3) {
+                                            System.out.println("\n\t\t1. Construir vehiculo.");
+                                            System.out.println("\t\t2. Comenzar ataque.");
+                                            System.out.println("\t\t3. Terminar accion.");
+                                            System.out.println("\n\t\tTu eleccion: ");
+                                            ops = text.nextInt();
+                                            switch (ops) {
+                                                case 1:
+                                                    VPesado_B.V_construccion();
+                                                    break;
+                                                case 2:
+                                                    VPesado_B.V_atacar();
+                                                    break;
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 2:
-                                    //Vehiculo
-                                    ops = 4;
-                                    ///////////////////////////////////////////////////////////////////
-                                    Bestia VLigero_B = factory.getBestia(7);
-                                    while (ops != 3) {
-                                        System.out.println("\n\t\t1. Construir vehiculo.");
-                                        System.out.println("\t\t2. Comenzar ataque.");
-                                        System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
-                                        ops = text.nextInt();
-                                        switch (ops) {
-                                            case 1:
-                                                VLigero_B.V_construccion();
-                                                break;
-                                            case 2:
-                                                VLigero_B.V_atacar();
-                                                break;
+                                        break;
+                                    case 2:
+                                        //Vehiculo
+                                        ops = 4;
+                                        ///////////////////////////////////////////////////////////////////
+                                        Bestia VLigero_B = factory.getBestia(7);
+                                        while (ops != 3) {
+                                            System.out.println("\n\t\t1. Construir vehiculo.");
+                                            System.out.println("\t\t2. Comenzar ataque.");
+                                            System.out.println("\t\t3. Terminar accion.");
+                                            System.out.println("\n\t\tTu eleccion: ");
+                                            ops = text.nextInt();
+                                            switch (ops) {
+                                                case 1:
+                                                    VLigero_B.V_construccion();
+                                                    break;
+                                                case 2:
+                                                    VLigero_B.V_atacar();
+                                                    break;
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    System.out.println("\n\t\tTermino accion en: Vehiculos.");
-                                    break;
-                                default:
-                                    System.out.println("Ingrese opcion valida, por favor.");
-                                    break;
+                                        break;
+                                    case 3:
+                                        System.out.println("\n\t\tTermino accion en: Vehiculos.");
+                                        break;
+                                    default:
+                                        System.out.println("Ingrese opcion valida, por favor.");
+                                        break;
+                                }
                             }
-                        }
-                        break;
-                    case 4:
-                        System.out.println("\n\t\t:::::::::::::::::::::::::::...::...::::.......::CAMBIO::DE::TURNOS::......::::...::...::::::::::::::::::::::::::");
-                        break;
-                    default:
-                        System.out.println("\n\t\tIngrese opcion valida, por favor.");
-                        break;
+                            break;
+                        case 4:
+
+                            break;
+                        case 5:
+                            System.out.println("\n\t\t:::::::::::::::::::::::::::...::...::::.......::CAMBIO::DE::TURNOS::......::::...::...::::::::::::::::::::::::::");
+                            break;
+                        default:
+                            System.out.println("\n\t\tIngrese opcion valida, por favor.");
+                            break;
+
+                    }
 
                 }
-
             }
         }
-    }
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public void Opciones2(int razavar, ArrayList<Integer> Centro1,ArrayList<Integer> Centro2) {
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //OP JUGADOR 2
+public void Opciones2(int razavar, ArrayList<Integer> Centro1, ArrayList<Integer> Centro2) {
         int op = 5;
         int ops;
         Scanner text = new Scanner(System.in);
@@ -806,7 +857,7 @@ public class Menu {
             while (op != 4) {
                 Humano Centro_H = factory1.getHumano(8);
                 Centro_H.mostrarCH(Centro1);
-                
+
                 System.out.println("\n\t\t1. Crear recolectores.");
                 System.out.println("\t\t2. Formar milicia.");
                 System.out.println("\t\t3. Construir vehiculos de ataque.");
@@ -1041,7 +1092,7 @@ public class Menu {
             while (op != 4) {
                 Esqueleto Centro_E = factory1.getEsqueleto(8);
                 Centro_E.mostrarCE(Centro1);
-                
+
                 System.out.println("\n\t\t1. Crear recolectores.");
                 System.out.println("\t\t2. Formar milicia.");
                 System.out.println("\t\t3. Construir vehiculos de ataque.");
@@ -1274,7 +1325,7 @@ public class Menu {
             while (op != 4) {
                 Bestia Centro_B = factory1.getBestia(8);
                 Centro_B.mostrarCB(Centro1);
-                
+
                 System.out.println("\n\t\t1. Crear recolectores.");
                 System.out.println("\t\t2. Formar milicia.");
                 System.out.println("\t\t3. Construir vehiculos de ataque.");
@@ -1304,10 +1355,10 @@ public class Menu {
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
-                                        int cant1=0;
+                                        int cant1 = 0;
                                         switch (ops) {
                                             case 1:
-                                                cant1=alma.E_generar();
+                                                cant1 = alma.E_generar();
                                                 break;
                                             case 2:
                                                 alma.E_recolectar(cant1, Centro);
@@ -1326,10 +1377,10 @@ public class Menu {
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
-                                        int cant2=0;
+                                        int cant2 = 0;
                                         switch (ops) {
                                             case 1:
-                                                cant2=cristal.E_generar();
+                                                cant2 = cristal.E_generar();
                                                 break;
                                             case 2:
                                                 cristal.E_recolectar(cant2, Centro);
@@ -1348,10 +1399,10 @@ public class Menu {
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
-                                        int cant3=0;
+                                        int cant3 = 0;
                                         switch (ops) {
                                             case 1:
-                                                cant3=luz.E_generar();
+                                                cant3 = luz.E_generar();
                                                 break;
                                             case 2:
                                                 luz.E_recolectar(cant3, Centro);
