@@ -15,13 +15,15 @@ public class Recolector_Diamante implements Esqueleto{
 
     @Override
     public int E_generar() {
-        int diamante=100;
+        int diamante=600;
         return diamante;
     }
 
     @Override
     public ArrayList<Integer> E_recolectar(int a, ArrayList<Integer> Centro) {
-        Centro.set(2, +a);
+        Centro.set(2, Centro.get(2)+a);
+        Centro.set(1, Centro.get(1)-200);
+        Centro.set(0, Centro.get(0)-200);
         return Centro;
     }
 

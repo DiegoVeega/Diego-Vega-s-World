@@ -15,13 +15,15 @@ public class Recolector_Hierro implements Humano{
 
     @Override
     public int E_generar() {
-        int hierro=100;
+        int hierro=600;
         return hierro;
     }
 
     @Override
     public ArrayList<Integer> E_recolectar(int a, ArrayList<Integer> Centro) {
-        Centro.set(2, +a);
+        Centro.set(2, Centro.get(2)+a);
+        Centro.set(1, Centro.get(1)-300);
+        Centro.set(0, Centro.get(0)-300);
         return Centro;
     }
 

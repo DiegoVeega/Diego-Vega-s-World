@@ -15,13 +15,15 @@ public class Recolector_Cristal implements Bestia{
 
     @Override
     public int E_generar() {
-        int cristal=100;
+        int cristal=600;
         return cristal;
     }
 
     @Override
     public ArrayList<Integer> E_recolectar(int a, ArrayList<Integer> Centro) {
-        Centro.set(1, +a);
+        Centro.set(1, Centro.get(1)+a);
+        Centro.set(0, Centro.get(0)-300);
+        Centro.set(2, Centro.get(2)-300);
         return Centro;
     }
 
