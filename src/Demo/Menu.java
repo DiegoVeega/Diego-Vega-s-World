@@ -86,6 +86,7 @@ public class Menu {
     public void Opciones(int razavar, ArrayList<Integer> Centro1, ArrayList<Integer> Centro2) {
         int op = 6;
         int ops;
+        int recolectado=0;
         Scanner text = new Scanner(System.in);
 
         if (razavar == 1) {
@@ -118,17 +119,22 @@ public class Menu {
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Humano madera = factory.getHumano(1);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de madera por $300 de piedra y de hierro. ");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                madera.E_generar();
+                                                recolectado=madera.E_generar();
                                                 break;
                                             case 2:
-                                                madera.E_recolectar();
+                                                if(recolectado!=0){
+                                                    madera.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -146,10 +152,15 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                piedra.E_generar();
+                                                recolectado=piedra.E_generar();
                                                 break;
                                             case 2:
-                                                piedra.E_recolectar();
+                                                if(recolectado!=0){
+                                                    piedra.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -167,10 +178,15 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                hierro.E_generar();
+                                                recolectado=hierro.E_generar();
                                                 break;
                                             case 2:
-                                                hierro.E_recolectar();
+                                                if(recolectado!=0){
+                                                    hierro.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -399,10 +415,15 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                plata.E_generar();
+                                                recolectado=plata.E_generar();
                                                 break;
                                             case 2:
-                                                plata.E_recolectar();
+                                                if(recolectado!=0){
+                                                    plata.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -419,10 +440,15 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                oro.E_generar();
+                                                recolectado=oro.E_generar();
                                                 break;
                                             case 2:
-                                                oro.E_recolectar();
+                                                if(recolectado!=0){
+                                                    oro.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -439,10 +465,15 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                diamante.E_generar();
+                                                recolectado=diamante.E_generar();
                                                 break;
                                             case 2:
-                                                diamante.E_recolectar();
+                                                if(recolectado!=0){
+                                                    diamante.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -671,13 +702,18 @@ public class Menu {
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
-                                        int cant1 = 0;
+                                        //int cant1 = 0;
                                         switch (ops) {
                                             case 1:
-                                                cant1 = alma.E_generar();
+                                                recolectado=alma.E_generar();
                                                 break;
                                             case 2:
-                                                alma.E_recolectar(cant1, Centro);
+                                                if(recolectado!=0){
+                                                    alma.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -693,13 +729,18 @@ public class Menu {
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
-                                        int cant2 = 0;
+                                        //int cant2 = 0;
                                         switch (ops) {
                                             case 1:
-                                                cant2 = cristal.E_generar();
+                                                recolectado=cristal.E_generar();
                                                 break;
                                             case 2:
-                                                cristal.E_recolectar(cant2, Centro);
+                                                if(recolectado!=0){
+                                                    cristal.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -715,13 +756,18 @@ public class Menu {
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
-                                        int cant3 = 0;
+                                        //int cant3 = 0;
                                         switch (ops) {
                                             case 1:
-                                                cant3 = luz.E_generar();
+                                                recolectado=luz.E_generar();
                                                 break;
                                             case 2:
-                                                luz.E_recolectar(cant3, Centro);
+                                                if(recolectado!=0){
+                                                    luz.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -921,6 +967,7 @@ public class Menu {
     public void Opciones2(int razavar, ArrayList<Integer> Centro1, ArrayList<Integer> Centro2) {
         int op = 6;
         int ops;
+        int recolectado=0;
         Scanner text = new Scanner(System.in);
 
         if (razavar == 1) {
@@ -961,10 +1008,15 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                madera.E_generar();
+                                                recolectado=madera.E_generar();
                                                 break;
                                             case 2:
-                                                madera.E_recolectar();
+                                                if(recolectado!=0){
+                                                    madera.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -982,10 +1034,15 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                piedra.E_generar();
+                                                recolectado=piedra.E_generar();
                                                 break;
                                             case 2:
-                                                piedra.E_recolectar();
+                                                if(recolectado!=0){
+                                                    piedra.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -1003,10 +1060,15 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                hierro.E_generar();
+                                                recolectado=hierro.E_generar();
                                                 break;
                                             case 2:
-                                                hierro.E_recolectar();
+                                                if(recolectado!=0){
+                                                    hierro.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -1238,10 +1300,15 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                plata.E_generar();
+                                                recolectado=plata.E_generar();
                                                 break;
                                             case 2:
-                                                plata.E_recolectar();
+                                                if(recolectado!=0){
+                                                    plata.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -1258,10 +1325,15 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                oro.E_generar();
+                                                recolectado=oro.E_generar();
                                                 break;
                                             case 2:
-                                                oro.E_recolectar();
+                                                if(recolectado!=0){
+                                                    oro.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -1278,10 +1350,15 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                diamante.E_generar();
+                                                recolectado=diamante.E_generar();
                                                 break;
                                             case 2:
-                                                diamante.E_recolectar();
+                                                if(recolectado!=0){
+                                                    diamante.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -1513,13 +1590,18 @@ public class Menu {
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
-                                        int cant1 = 0;
+                                        //int cant1 = 0;
                                         switch (ops) {
                                             case 1:
-                                                cant1 = alma.E_generar();
+                                                recolectado=alma.E_generar();
                                                 break;
                                             case 2:
-                                                alma.E_recolectar(cant1, Centro);
+                                                if(recolectado!=0){
+                                                    alma.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -1535,13 +1617,18 @@ public class Menu {
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
-                                        int cant2 = 0;
+                                        //int cant2 = 0;
                                         switch (ops) {
                                             case 1:
-                                                cant2 = cristal.E_generar();
+                                                recolectado=cristal.E_generar();
                                                 break;
                                             case 2:
-                                                cristal.E_recolectar(cant2, Centro);
+                                                if(recolectado!=0){
+                                                    cristal.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
@@ -1557,13 +1644,18 @@ public class Menu {
                                         System.out.println("\t\t3. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
-                                        int cant3 = 0;
+                                        //int cant3 = 0;
                                         switch (ops) {
                                             case 1:
-                                                cant3 = luz.E_generar();
+                                                recolectado=luz.E_generar();
                                                 break;
                                             case 2:
-                                                luz.E_recolectar(cant3, Centro);
+                                                if(recolectado!=0){
+                                                    luz.E_recolectar(recolectado, Centro1);
+                                                }
+                                                else{
+                                                    System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
+                                                }
                                                 break;
                                         }
                                     }
