@@ -88,52 +88,52 @@ public class Centro_H implements Humano{
     }
 
     @Override
-    public ArrayList<Soldados> M_entrenar() {
+    public ArrayList<Soldados> M_entrenar(ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void M_atacar(ArrayList<Soldados> Tribu) {
+    public void M_atacar(ArrayList<Soldados> Tribu, ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void M_defender(ArrayList<Soldados> Tribu) {
+    public void M_defender(ArrayList<Soldados> Tribu, ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Especialista> M_entrenarE() {
+    public ArrayList<Especialista> M_entrenarE(ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void M_atacarE(ArrayList<Especialista> Especialista) {
+    public void M_atacarE(ArrayList<Especialista> Especialista, ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void M_defenderE(ArrayList<Especialista> Especialista) {
+    public void M_defenderE(ArrayList<Especialista> Especialista, ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<VLigero_H> V_construccion() {
+    public ArrayList<VLigero_H> V_construccion(ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void V_atacar(ArrayList<VLigero_H> VLigero_H) {
+    public void V_atacar(ArrayList<VLigero_H> VLigero_H, ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<VPesado_H> V_construccionP() {
+    public ArrayList<VPesado_H> V_construccionP(ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void V_atacarP(ArrayList<VPesado_H> VPesado_H) {
+    public void V_atacarP(ArrayList<VPesado_H> VPesado_H, ArrayList<Integer> Centro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
