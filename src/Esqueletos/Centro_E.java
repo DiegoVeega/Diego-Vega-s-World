@@ -11,88 +11,52 @@ import java.util.ArrayList;
  *
  * @author diego
  */
-public class Centro_E implements Esqueleto{
+public class Centro_E implements Esqueleto {
+
     /**
-    private int vida=2500;
-    private int plata=500;
-    private int oro=500;
-    private int diamante=500;
-    private int MAXplata=10000;
-    private int MAXoro=5000;
-    private int MAXdiamante=3000;
-    
-    public Centro_E() {
-    }
-    
-    public Centro_E(int vida, int plata, int oro, int diamante, int MAXplata, int MAXoro, int MAXdiamante){
-        this.vida=vida;
-        this.plata=plata;
-        this.oro=oro;
-        this.diamante=diamante;
-        this.MAXplata=MAXplata;
-        this.MAXoro=MAXoro;
-        this.MAXdiamante=MAXdiamante;
-    }
-
-    public int getVida() {
-        return vida;
-    }
-
-    public void setVida(int vida) {
-        this.vida = vida;
-    }
-
-    public int getPlata() {
-        return plata;
-    }
-
-    public void setPlata(int plata) {
-        this.plata = plata;
-    }
-
-    public int getOro() {
-        return oro;
-    }
-
-    public void setOro(int oro) {
-        this.oro = oro;
-    }
-
-    public int getDiamante() {
-        return diamante;
-    }
-
-    public void setDiamante(int diamante) {
-        this.diamante = diamante;
-    }
-
-    public int getMAXplata() {
-        return MAXplata;
-    }
-
-    public void setMAXplata(int MAXplata) {
-        this.MAXplata = MAXplata;
-    }
-
-    public int getMAXoro() {
-        return MAXoro;
-    }
-
-    public void setMAXoro(int MAXoro) {
-        this.MAXoro = MAXoro;
-    }
-
-    public int getMAXdiamante() {
-        return MAXdiamante;
-    }
-
-    public void setMAXdiamante(int MAXdiamante) {
-        this.MAXdiamante = MAXdiamante;
-    }
-    */
+     * private int vida=2500; private int plata=500; private int oro=500;
+     * private int diamante=500; private int MAXplata=10000; private int
+     * MAXoro=5000; private int MAXdiamante=3000;
+     *
+     * public Centro_E() { }
+     *
+     * public Centro_E(int vida, int plata, int oro, int diamante, int MAXplata,
+     * int MAXoro, int MAXdiamante){ this.vida=vida; this.plata=plata;
+     * this.oro=oro; this.diamante=diamante; this.MAXplata=MAXplata;
+     * this.MAXoro=MAXoro; this.MAXdiamante=MAXdiamante; }
+     *
+     * public int getVida() { return vida; }
+     *
+     * public void setVida(int vida) { this.vida = vida; }
+     *
+     * public int getPlata() { return plata; }
+     *
+     * public void setPlata(int plata) { this.plata = plata; }
+     *
+     * public int getOro() { return oro; }
+     *
+     * public void setOro(int oro) { this.oro = oro; }
+     *
+     * public int getDiamante() { return diamante; }
+     *
+     * public void setDiamante(int diamante) { this.diamante = diamante; }
+     *
+     * public int getMAXplata() { return MAXplata; }
+     *
+     * public void setMAXplata(int MAXplata) { this.MAXplata = MAXplata; }
+     *
+     * public int getMAXoro() { return MAXoro; }
+     *
+     * public void setMAXoro(int MAXoro) { this.MAXoro = MAXoro; }
+     *
+     * public int getMAXdiamante() { return MAXdiamante; }
+     *
+     * public void setMAXdiamante(int MAXdiamante) { this.MAXdiamante =
+     * MAXdiamante; }
+     */
     int plata = 1700, oro = 1700, diamante = 1700;
     int MAXplata = 10000, MAXoro = 5000, MAXdiamante = 3000;
-    int vida=2500;
+    int vida = 2500;
 
     @Override
     public ArrayList<Integer> generarCE() {
@@ -113,50 +77,28 @@ public class Centro_E implements Esqueleto{
         int costo;
         switch (num) {
             case 1:
-                int r1 = (((int) 0.1) * (Centro.get(3)));//10% plata
-                int r2 = (((int) 0.1) * (Centro.get(4)));//10% oro
-                int r3 = (((int) 0.1) * (Centro.get(5)));//10% diamante
-                costo = ((int) 0.25) * (Centro.get(3) + r1 + Centro.get(4) + r2 + Centro.get(5) + r3);
-                costo= costo/3;
-                if (Centro.get(0) >= costo && Centro.get(1) >= costo && Centro.get(2) >= costo) {
-                    Centro.set(0, -costo);
-                    Centro.set(1, -costo);
-                    Centro.set(2, -costo);
-                    
-                    System.out.println("\t\tSe realizo la mejora");
-                } 
-                else {
-                    System.out.println("No dispone de la cantidad de recursos necesaria: " + costo + " cada de recurso");
-                }
+                costo = 1650;
+                Centro.set(0, Centro.get(0)-costo);
+                Centro.set(1, Centro.get(1)-costo);
+                Centro.set(2, Centro.get(2)-costo);
+
+                System.out.println("\t\tSe realizo la mejora");
                 break;
             case 2:
-                int r11 = (((int) 0.3) * (Centro.get(3)));//30% plata
-                int r21 = (((int) 0.3) * (Centro.get(4)));//30% oro
-                int r31 = (((int) 0.3) * (Centro.get(5)));//30% diamante
-                costo = ((int) 0.25) * (Centro.get(3) + r11 + Centro.get(4) + r21 + Centro.get(5) + r31);
-                costo= costo/3;
-                if (Centro.get(0) >= costo && Centro.get(1) >= costo && Centro.get(2) >= costo) {
-                    Centro.set(0, -costo);
-                    Centro.set(1, -costo);
-                    Centro.set(2, -costo);
-                } else {
-                    System.out.println("No dispone de la cantidad de recursos necesaria: " + costo + " cada de recurso");
-                }
+                costo = 1895;
+                Centro.set(0, Centro.get(0)-costo);
+                Centro.set(1, Centro.get(1)-costo);
+                Centro.set(2, Centro.get(2)-costo);
+
+                System.out.println("\t\tSe realizo la mejora");
                 break;
             case 3:
-                int r12 = (((int) 0.5) * (Centro.get(3)));//50% plata
-                int r22= (((int) 0.5) * (Centro.get(4)));//50% oro
-                int r32 = (((int) 0.5) * (Centro.get(5)));//50% diamante
-                costo = ((int) 0.25) * (Centro.get(3) + r12 + Centro.get(4) + r22 + Centro.get(5) + r32);
-                costo = costo/3;
-                if (Centro.get(0) >= costo && Centro.get(1) >= costo && Centro.get(2) >= costo) {
-                    Centro.set(0, -costo);
-                    Centro.set(1, -costo);
-                    Centro.set(2, -costo);
-                }
-                else{
-                    System.out.println("No dispone de la cantidad de recursos necesaria: "+costo+" cada de recurso");
-                }
+                costo = 2274;
+                Centro.set(0, Centro.get(0)-costo);
+                Centro.set(1, Centro.get(1)-costo);
+                Centro.set(2, Centro.get(2)-costo);
+
+                System.out.println("\t\tSe realizo la mejora");
                 break;
         }
         return Centro;
@@ -165,14 +107,14 @@ public class Centro_E implements Esqueleto{
     @Override
     public void mostrarCE(ArrayList<Integer> Centro) {
         System.out.println("\n\t\t\t\t\t\t+-----------------------------------------------+");
-        System.out.println("\n\t\t\t\t\t\tCentro de mando: "+Centro.get(6)+" HP");
+        System.out.println("\n\t\t\t\t\t\tCentro de mando: " + Centro.get(6) + " HP");
         System.out.println("\n\t\t\t\t\t\t+-----------------------------------------------+");
-        System.out.println("\t\t\t\t\t\t|  Cantidad de recursos  |"+"   Capacidad maxima   |");
-        System.out.println("\t\t\t\t\t\t|                        |"+"    \t\t\t|");
-        System.out.println("\t\t\t\t\t\t|  Alma: "+Centro.get(0)+"       \t"+"\t"+Centro.get(3)+"\t\t|");
-        System.out.println("\t\t\t\t\t\t|  Cristal: "+Centro.get(1)+"    \t"+"\t"+Centro.get(4)+"\t\t|");
-        System.out.println("\t\t\t\t\t\t|  Luz: "+Centro.get(2)+"      \t"+"\t"+Centro.get(5)+"\t\t|");
-        System.out.println("\t\t\t\t\t\t|                        |"+"    \t\t\t|");
+        System.out.println("\t\t\t\t\t\t|  Cantidad de recursos  |" + "   Capacidad maxima   |");
+        System.out.println("\t\t\t\t\t\t|                        |" + "    \t\t\t|");
+        System.out.println("\t\t\t\t\t\t|  Alma: " + Centro.get(0) + "       \t" + "\t" + Centro.get(3) + "\t\t|");
+        System.out.println("\t\t\t\t\t\t|  Cristal: " + Centro.get(1) + "    \t" + "\t" + Centro.get(4) + "\t\t|");
+        System.out.println("\t\t\t\t\t\t|  Luz: " + Centro.get(2) + "      \t" + "\t" + Centro.get(5) + "\t\t|");
+        System.out.println("\t\t\t\t\t\t|                        |" + "    \t\t\t|");
         System.out.println("\t\t\t\t\t\t+-----------------------------------------------+\n");
     }
 
@@ -235,5 +177,5 @@ public class Centro_E implements Esqueleto{
     public void V_atacarP(ArrayList<VPesado_E> VPesado_B) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }

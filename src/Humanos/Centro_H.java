@@ -36,47 +36,28 @@ public class Centro_H implements Humano{
         int costo;
         switch (num) {
             case 1:
-                int r1 = (((int) 0.1) * (Centro.get(3)));//10% madera
-                int r2 = (((int) 0.1) * (Centro.get(4)));//10% piedra
-                int r3 = (((int) 0.1) * (Centro.get(5)));//10% hierro
-                costo = ((int) 0.25) * (Centro.get(3) + r1 + Centro.get(4) + r2 + Centro.get(5) + r3);
-                costo /= costo;
-                if (Centro.get(0) >= costo && Centro.get(1) >= costo && Centro.get(2) >= costo) {
-                    Centro.set(0, -costo);
-                    Centro.set(1, -costo);
-                    Centro.set(2, -costo);
-                } else {
-                    System.out.println("No dispone de la cantidad de recursos necesaria: " + costo + " cada de recurso");
-                }
+                costo = 1650;
+                Centro.set(0, Centro.get(0)-costo);
+                Centro.set(1, Centro.get(1)-costo);
+                Centro.set(2, Centro.get(2)-costo);
+
+                System.out.println("\t\tSe realizo la mejora");
                 break;
             case 2:
-                int r11 = (((int) 0.3) * (Centro.get(3)));//30% madera
-                int r21 = (((int) 0.3) * (Centro.get(4)));//30% piedra
-                int r31 = (((int) 0.3) * (Centro.get(5)));//30% hierro
-                costo = ((int) 0.25) * (Centro.get(3) + r11 + Centro.get(4) + r21 + Centro.get(5) + r31);
-                costo /= costo;
-                if (Centro.get(0) >= costo && Centro.get(1) >= costo && Centro.get(2) >= costo) {
-                    Centro.set(0, -costo);
-                    Centro.set(1, -costo);
-                    Centro.set(2, -costo);
-                } else {
-                    System.out.println("No dispone de la cantidad de recursos necesaria: " + costo + " cada de recurso");
-                }
+                costo = 1895;
+                Centro.set(0, Centro.get(0)-costo);
+                Centro.set(1, Centro.get(1)-costo);
+                Centro.set(2, Centro.get(2)-costo);
+
+                System.out.println("\t\tSe realizo la mejora");
                 break;
             case 3:
-                int r12 = (((int) 0.5) * (Centro.get(3)));//50% madera
-                int r22= (((int) 0.5) * (Centro.get(4)));//50% piedra
-                int r32 = (((int) 0.5) * (Centro.get(5)));//50% hierro
-                costo = ((int) 0.25) * (Centro.get(3) + r12 + Centro.get(4) + r22 + Centro.get(5) + r32);
-                costo /= costo;
-                if (Centro.get(0) >= costo && Centro.get(1) >= costo && Centro.get(2) >= costo) {
-                    Centro.set(0, -costo);
-                    Centro.set(1, -costo);
-                    Centro.set(2, -costo);
-                }
-                else{
-                    System.out.println("No dispone de la cantidad de recursos necesaria: "+costo+" cada de recurso");
-                }
+                costo = 2274;
+                Centro.set(0, Centro.get(0)-costo);
+                Centro.set(1, Centro.get(1)-costo);
+                Centro.set(2, Centro.get(2)-costo);
+
+                System.out.println("\t\tSe realizo la mejora");
                 break;
         }
         return Centro;
