@@ -70,39 +70,47 @@ public class Main {
         
         switch(RAZAR2){
             case 1:
-                Centro2=menu.seleccionRaza(RAZAR2);
+                Centro2=menu.seleccionRaza2(RAZAR2);
                 break;
             case 2:
-                Centro2=menu.seleccionRaza(RAZAR2);
+                Centro2=menu.seleccionRaza2(RAZAR2);
                 break;
             case 3:
-                Centro2=menu.seleccionRaza(RAZAR2);
+                Centro2=menu.seleccionRaza2(RAZAR2);
                 break;
         }
         
         int RUN=1;
         
-        ArrayList<Integer> Centros=Centro1;
+        ArrayList<Integer> Centros;
         
         System.out.print("\n\t\tRey "+Rey1+" es su turno.\n");
         
         int razavar=RAZAR1;
         do{
             //DIRECTAMENTE A LAS OPCIONES EN EL MENU
-            menu.Opciones(razavar, Centros);
-            
+            if(turno==1){
+            menu.Opciones(razavar, Centro1, Centro2);
+            }
+            if(turno==2){
+                menu.Opciones2(razavar, Centro1, Centro2);
+            }
             if(turno==1){
                 JUGADOR=1;
                 System.out.print("\n\t\tRey "+Rey2+" es su turno.\n");
                 turno=2;//PASAR AL JUGADOR 2
                 Centros=Centro2;
+                Centro2=Centro1;
+                Centro1=Centros;
                 razavar=RAZAR2;
             }
             else{
                 JUGADOR=2;
                 System.out.print("\n\t\tRey "+Rey1+" es su turno.\n");
                 turno=1;//PASAR AL JUGADOR 1
-                Centros=Centro1;
+                Centros=Centro2;
+                Centro2=Centro1;
+                Centro1=Centros;
                 razavar=RAZAR1;
             }
         }while(RUN!=0);
