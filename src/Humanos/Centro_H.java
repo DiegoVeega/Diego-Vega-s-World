@@ -20,13 +20,13 @@ public class Centro_H implements Humano{
     @Override
     public ArrayList<Integer> generarCH() {
         ArrayList<Integer> Centro = new ArrayList<>();
-        Centro.add(madera);
-        Centro.add(piedra);
-        Centro.add(hierro);
-        Centro.add(MAXmadera);
-        Centro.add(MAXpiedra);
-        Centro.add(MAXhierro);
-        Centro.add(vida);
+        Centro.add(madera);//0
+        Centro.add(piedra);//1
+        Centro.add(hierro);//2
+        Centro.add(MAXmadera);//3
+        Centro.add(MAXpiedra);//4
+        Centro.add(MAXhierro);//5
+        Centro.add(vida);//6
         System.out.println("\n\t\tRey, ahora tiene un centro de mando Humano.");
         return Centro;    
     }
@@ -86,6 +86,7 @@ public class Centro_H implements Humano{
     public void mostrarCH(ArrayList<Integer> Centro) {
         System.out.println("\n\t\t\t\t\t\t+-----------------------------------------------+");
         System.out.println("\n\t\t\t\t\t\tCentro de mando: "+Centro.get(6)+" HP");
+        System.out.println("\n\t\t\t\t\t\t+-----------------------------------------------+");
         System.out.println("\t\t\t\t\t\t|  Cantidad de recursos  |"+"   Capacidad maxima   |");
         System.out.println("\t\t\t\t\t\t|                        |"+"    \t\t\t|");
         System.out.println("\t\t\t\t\t\t|  Madera: "+Centro.get(0)+"       \t"+"\t"+Centro.get(3)+"\t\t|");
