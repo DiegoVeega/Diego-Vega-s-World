@@ -90,7 +90,7 @@ public class Centro_E implements Esqueleto{
         this.MAXdiamante = MAXdiamante;
     }
     */
-    int plata = 500, oro = 500, diamante = 500;
+    int plata = 1700, oro = 1700, diamante = 1700;
     int MAXplata = 10000, MAXoro = 5000, MAXdiamante = 3000;
     int vida=2500;
 
@@ -117,12 +117,15 @@ public class Centro_E implements Esqueleto{
                 int r2 = (((int) 0.1) * (Centro.get(4)));//10% oro
                 int r3 = (((int) 0.1) * (Centro.get(5)));//10% diamante
                 costo = ((int) 0.25) * (Centro.get(3) + r1 + Centro.get(4) + r2 + Centro.get(5) + r3);
-                costo /= costo;
+                costo= costo/3;
                 if (Centro.get(0) >= costo && Centro.get(1) >= costo && Centro.get(2) >= costo) {
                     Centro.set(0, -costo);
                     Centro.set(1, -costo);
                     Centro.set(2, -costo);
-                } else {
+                    
+                    System.out.println("\t\tSe realizo la mejora");
+                } 
+                else {
                     System.out.println("No dispone de la cantidad de recursos necesaria: " + costo + " cada de recurso");
                 }
                 break;
@@ -131,7 +134,7 @@ public class Centro_E implements Esqueleto{
                 int r21 = (((int) 0.3) * (Centro.get(4)));//30% oro
                 int r31 = (((int) 0.3) * (Centro.get(5)));//30% diamante
                 costo = ((int) 0.25) * (Centro.get(3) + r11 + Centro.get(4) + r21 + Centro.get(5) + r31);
-                costo /= costo;
+                costo= costo/3;
                 if (Centro.get(0) >= costo && Centro.get(1) >= costo && Centro.get(2) >= costo) {
                     Centro.set(0, -costo);
                     Centro.set(1, -costo);
@@ -145,7 +148,7 @@ public class Centro_E implements Esqueleto{
                 int r22= (((int) 0.5) * (Centro.get(4)));//50% oro
                 int r32 = (((int) 0.5) * (Centro.get(5)));//50% diamante
                 costo = ((int) 0.25) * (Centro.get(3) + r12 + Centro.get(4) + r22 + Centro.get(5) + r32);
-                costo /= costo;
+                costo = costo/3;
                 if (Centro.get(0) >= costo && Centro.get(1) >= costo && Centro.get(2) >= costo) {
                     Centro.set(0, -costo);
                     Centro.set(1, -costo);
@@ -163,6 +166,7 @@ public class Centro_E implements Esqueleto{
     public void mostrarCE(ArrayList<Integer> Centro) {
         System.out.println("\n\t\t\t\t\t\t+-----------------------------------------------+");
         System.out.println("\n\t\t\t\t\t\tCentro de mando: "+Centro.get(6)+" HP");
+        System.out.println("\n\t\t\t\t\t\t+-----------------------------------------------+");
         System.out.println("\t\t\t\t\t\t|  Cantidad de recursos  |"+"   Capacidad maxima   |");
         System.out.println("\t\t\t\t\t\t|                        |"+"    \t\t\t|");
         System.out.println("\t\t\t\t\t\t|  Alma: "+Centro.get(0)+"       \t"+"\t"+Centro.get(3)+"\t\t|");
