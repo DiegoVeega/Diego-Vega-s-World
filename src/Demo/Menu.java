@@ -2,6 +2,10 @@ package Demo;
 
 import Bestias.Bestia;
 import Esqueletos.Esqueleto;
+import Esqueletos.EsqueletoColosal;
+import Esqueletos.Horda;
+import Esqueletos.VLigero_E;
+import Esqueletos.VPesado_E;
 import Factorys.AbstractFactory;
 import Factorys.FactoryProducer;
 import Humanos.Especialista;
@@ -508,6 +512,7 @@ public class Menu {
                                     ops = 5;
                                     ///////////////////////////////////////////////////////////////////
                                     Esqueleto horda = factory.getEsqueleto(4);
+                                    ArrayList<Horda> SOLDADOSE= new ArrayList<>();
                                     while (ops != 4) {
                                         System.out.println("\n\t\t1. Comenzar a entrenar.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -517,13 +522,13 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                horda.M_entrenar();
+                                                SOLDADOSE=horda.M_entrenar(Centro1);
                                                 break;
                                             case 2:
-                                                horda.M_atacar();
+                                                horda.M_atacar(SOLDADOSE, Centro1);
                                                 break;
                                             case 3:
-                                                horda.M_defender();
+                                                horda.M_defender(SOLDADOSE, Centro1);
                                                 break;
                                         }
                                     }
@@ -533,6 +538,7 @@ public class Menu {
                                     ops = 5;
                                     ///////////////////////////////////////////////////////////////////
                                     Esqueleto colosal = factory.getEsqueleto(5);
+                                    ArrayList<EsqueletoColosal> ESPECIALE= new ArrayList<>();
                                     while (ops != 4) {
                                         System.out.println("\n\t\t1. Comenzar a entrenar.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -542,13 +548,13 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                colosal.M_entrenar();
+                                                ESPECIALE=colosal.M_entrenarE(Centro1);
                                                 break;
                                             case 2:
-                                                colosal.M_atacar();
+                                                colosal.M_atacarE(ESPECIALE, Centro1);
                                                 break;
                                             case 3:
-                                                colosal.M_defender();
+                                                colosal.M_defenderE(ESPECIALE, Centro1);
                                                 break;
                                         }
                                     }
@@ -576,6 +582,7 @@ public class Menu {
                                     ops = 4;
                                     ///////////////////////////////////////////////////////////////////
                                     Esqueleto tanqueE = factory.getEsqueleto(6);
+                                    ArrayList<VPesado_E> pesado= new ArrayList<>();
                                     while (ops != 3) {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -584,10 +591,10 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                tanqueE.V_construccion();
+                                                pesado=tanqueE.V_construccionP(Centro1);
                                                 break;
                                             case 2:
-                                                tanqueE.V_atacar();
+                                                tanqueE.V_atacarP(pesado, Centro1);
                                                 break;
                                         }
                                     }
@@ -597,6 +604,7 @@ public class Menu {
                                     ops = 4;
                                     ///////////////////////////////////////////////////////////////////
                                     Esqueleto bici = factory.getEsqueleto(7);
+                                    ArrayList<VLigero_E> ligero= new ArrayList<>();
                                     while (ops != 3) {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
@@ -605,10 +613,10 @@ public class Menu {
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
-                                                bici.V_construccion();
+                                                ligero=bici.V_construccion(Centro1);
                                                 break;
                                             case 2:
-                                                bici.V_atacar();
+                                                bici.V_atacar(ligero, Centro1);
                                                 break;
                                         }
                                     }
