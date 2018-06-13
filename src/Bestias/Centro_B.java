@@ -41,10 +41,16 @@ public class Centro_B implements Bestia {
                 Centro.set(1, Centro.get(1)-costo);
                 Centro.set(2, Centro.get(2)-costo);
                 
-                Centro.set(3, Centro.get(0)+((int)0.1*Centro.get(0)));
-                Centro.set(4, Centro.get(1)+((int)0.1*Centro.get(1)));
-                Centro.set(5, Centro.get(2)+((int)0.1*Centro.get(2)));
-                System.out.println("\t\tSe realizo la mejora");
+                Centro.set(3, 11000);
+                Centro.set(4, 5500);
+                Centro.set(5, 3300);
+                System.out.println("\t\t\t\t\t                                                  \n"
+                        + "\t\t\t\t\t,--.  ,--.,--.,--.   ,--.,------.,--.        ,--. \n"
+                        + "\t\t\t\t\t|  ,'.|  ||  | \\  `.'  / |  .---'|  |       /   | \n"
+                        + "\t\t\t\t\t|  |' '  ||  |  \\     /  |  `--, |  |       `|  | \n"
+                        + "\t\t\t\t\t|  | `   ||  |   \\   /   |  `---.|  '--.     |  | \n"
+                        + "\t\t\t\t\t`--'  `--'`--'    `-'    `------'`-----'     `--' \n"
+                        + "\t\t\t\t\t                                                  ");
                 break;
             case 2:
                 costo = 1895;
@@ -52,10 +58,16 @@ public class Centro_B implements Bestia {
                 Centro.set(1, Centro.get(1)-costo);
                 Centro.set(2, Centro.get(2)-costo);
                 
-                Centro.set(3, Centro.get(0)+((int)0.3*Centro.get(0)));
-                Centro.set(4, Centro.get(1)+((int)0.3*Centro.get(1)));
-                Centro.set(5, Centro.get(2)+((int)0.3*Centro.get(2)));
-                System.out.println("\t\tSe realizo la mejora");
+                Centro.set(3, 14300);
+                Centro.set(4, 7150);
+                Centro.set(5, 4290);
+                System.out.println("\t\t\t\t\t                                                    \n"
+                        + "\t\t\t\t\t,--.  ,--.,--.,--.   ,--.,------.,--.        ,---.  \n"
+                        + "\t\t\t\t\t|  ,'.|  ||  | \\  `.'  / |  .---'|  |       '.-.  \\ \n"
+                        + "\t\t\t\t\t|  |' '  ||  |  \\     /  |  `--, |  |        .-' .' \n"
+                        + "\t\t\t\t\t|  | `   ||  |   \\   /   |  `---.|  '--.    /   '-. \n"
+                        + "\t\t\t\t\t`--'  `--'`--'    `-'    `------'`-----'    '-----' \n"
+                        + "\t\t\t\t\t                                                    ");
                 break;
             case 3:
                 costo = 2274;
@@ -63,10 +75,16 @@ public class Centro_B implements Bestia {
                 Centro.set(1, Centro.get(1)-costo);
                 Centro.set(2, Centro.get(2)-costo);
                 
-                Centro.set(3, Centro.get(0)+((int)0.5*Centro.get(0)));
-                Centro.set(4, Centro.get(1)+((int)0.5*Centro.get(1)));
-                Centro.set(5, Centro.get(2)+((int)0.5*Centro.get(2)));
-                System.out.println("\t\tSe realizo la mejora");
+                Centro.set(3, 21450);
+                Centro.set(4, 10725);
+                Centro.set(5, 6435);
+                System.out.println("\t\t\t\t\t                                                    \n"
+                        + "\t\t\t\t\t,--.  ,--.,--.,--.   ,--.,------.,--.       ,----.  \n"
+                        + "\t\t\t\t\t|  ,'.|  ||  | \\  `.'  / |  .---'|  |       '.-.  | \n"
+                        + "\t\t\t\t\t|  |' '  ||  |  \\     /  |  `--, |  |         .' <  \n"
+                        + "\t\t\t\t\t|  | `   ||  |   \\   /   |  `---.|  '--.    /'-'  | \n"
+                        + "\t\t\t\t\t`--'  `--'`--'    `-'    `------'`-----'    `----'  \n"
+                        + "\t\t\t\t\t                                                   ");
                 break;
         }
         return Centro;
