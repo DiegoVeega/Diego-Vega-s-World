@@ -1580,7 +1580,7 @@ public class Menu {
         if (razavar == 3) {
             //BESTIA
             while (op != 5) {
-                Bestia Centro_B = factory.getBestia(8);
+                Bestia Centro_B = factory1.getBestia(8);
                 Centro_B.mostrarCB(Centro1);
 
                 System.out.println("\n\t\t1. Crear recolectores.");
