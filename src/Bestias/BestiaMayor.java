@@ -16,7 +16,7 @@ public class BestiaMayor implements Bestia{
     
     private int vida = 100;
     private String nombre = "Bestia Mayor";
-    private int ataque = 2500;
+    private int ataque = 350;
     private boolean entrenado = false;
     
     public BestiaMayor(){
@@ -68,7 +68,7 @@ public class BestiaMayor implements Bestia{
         int op;
         ArrayList<BestiaMayor> Milicia = new ArrayList<>();
         Milicia = BestiaMayor;
-        System.out.println("\n\t\tRey, estos son sus tribus: \n");
+        System.out.println("\n\t\tRey, estos son sus Bestias Mayores: \n");
         for (BestiaMayor t : Milicia) {
             for (int i = 0; i < Milicia.size(); i++) {
                 System.out.println("\t\t" + i + 1 + "Soy una " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
@@ -87,7 +87,7 @@ public class BestiaMayor implements Bestia{
         int op;
         ArrayList<BestiaMayor> Milicia = new ArrayList<>();
         Milicia = BestiaMayor;
-        System.out.println("\n\t\tRey, estos son sus tribus: \n");
+        System.out.println("\n\t\tRey, estos son sus Bestias Mayoress: \n");
         for (BestiaMayor t : Milicia) {
             for (int i = 0; i < Milicia.size(); i++) {
                 System.out.println("\t\t" + i + 1 + "Soy una " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
@@ -105,7 +105,7 @@ public class BestiaMayor implements Bestia{
         BestiaMayor bestia = new BestiaMayor();
         entrenado = true;
         Milicia.add(bestia);
-        System.out.println("\n\t\tSe esta entrenando a su tribu, Rey...");
+        System.out.println("\n\t\tSe esta entrenando a su Bestia Mayor, Rey...");
         return Milicia;
     }
 
