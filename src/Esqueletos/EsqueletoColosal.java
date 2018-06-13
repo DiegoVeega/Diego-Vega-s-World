@@ -17,7 +17,7 @@ public class EsqueletoColosal implements Esqueleto{
     
     private int vida = 100;
     private String nombre = "Esqueleto Colosal";
-    private int ataque = 75;
+    private int ataque = 305;
     private boolean entrenado = false;
     
     public EsqueletoColosal(){

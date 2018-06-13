@@ -16,7 +16,7 @@ public class BestiaMayor implements Bestia{
     
     private int vida = 100;
     private String nombre = "Bestia Mayor";
-    private int ataque = 75;
+    private int ataque = 2500;
     private boolean entrenado = false;
     
     public BestiaMayor(){
