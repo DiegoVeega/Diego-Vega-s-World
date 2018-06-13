@@ -239,7 +239,7 @@ public class Menu {
                                                 SOLDADO=soldados.M_entrenar(Centro1);
                                                 break;
                                             case 2:
-                                                soldados.M_atacar(SOLDADO,Centro1);
+                                                soldados.M_atacar(SOLDADO,Centro1,Centro2);
                                                 break;
                                             case 3:
                                                 soldados.M_defender(SOLDADO, Centro1);
@@ -265,7 +265,7 @@ public class Menu {
                                                 Especial=especialista.M_entrenarE(Centro1);
                                                 break;
                                             case 2:
-                                                especialista.M_atacarE(Especial,Centro1);
+                                                especialista.M_atacarE(Especial,Centro1,Centro2);
                                                 break;
                                             case 3:
                                                 especialista.M_defenderE(Especial, Centro1);
@@ -307,7 +307,7 @@ public class Menu {
                                                 pesado=tanque.V_construccionP(Centro1);
                                                 break;
                                             case 2:
-                                                tanque.V_atacarP(pesado, Centro1);
+                                                tanque.V_atacarP(pesado, Centro1,Centro2);
                                                 break;
                                         }
                                     }
@@ -328,7 +328,7 @@ public class Menu {
                                                 ligero=moto.V_construccion(Centro1);
                                                 break;
                                             case 2:
-                                                moto.V_atacar(ligero, Centro1);
+                                                moto.V_atacar(ligero, Centro1,Centro2);
                                                 break;
                                         }
                                     }
@@ -529,7 +529,7 @@ public class Menu {
                                                 SOLDADOSE=horda.M_entrenar(Centro1);
                                                 break;
                                             case 2:
-                                                horda.M_atacar(SOLDADOSE, Centro1);
+                                                horda.M_atacar(SOLDADOSE, Centro1,Centro2);
                                                 break;
                                             case 3:
                                                 horda.M_defender(SOLDADOSE, Centro1);
@@ -555,7 +555,7 @@ public class Menu {
                                                 ESPECIALE=colosal.M_entrenarE(Centro1);
                                                 break;
                                             case 2:
-                                                colosal.M_atacarE(ESPECIALE, Centro1);
+                                                colosal.M_atacarE(ESPECIALE, Centro1,Centro2);
                                                 break;
                                             case 3:
                                                 colosal.M_defenderE(ESPECIALE, Centro1);
@@ -598,7 +598,7 @@ public class Menu {
                                                 pesado=tanqueE.V_construccionP(Centro1);
                                                 break;
                                             case 2:
-                                                tanqueE.V_atacarP(pesado, Centro1);
+                                                tanqueE.V_atacarP(pesado, Centro1,Centro2);
                                                 break;
                                         }
                                     }
@@ -620,7 +620,7 @@ public class Menu {
                                                 ligero=bici.V_construccion(Centro1);
                                                 break;
                                             case 2:
-                                                bici.V_atacar(ligero, Centro1);
+                                                bici.V_atacar(ligero, Centro1,Centro2);
                                                 break;
                                         }
                                     }
@@ -827,7 +827,7 @@ public class Menu {
                                                 TRI=tribu.M_entrenar(Centro1);
                                                 break;
                                             case 2:
-                                                tribu.M_atacar(TRI, Centro1);
+                                                tribu.M_atacar(TRI, Centro1,Centro2);
                                                 break;
                                             case 3:
                                                 tribu.M_defender(TRI, Centro1);
@@ -853,7 +853,7 @@ public class Menu {
                                                 BM=Bmayor.M_entrenarE(Centro1);
                                                 break;
                                             case 2:
-                                                Bmayor.M_atacarE(BM, Centro1);
+                                                Bmayor.M_atacarE(BM, Centro1,Centro2);
                                                 break;
                                             case 3:
                                                 Bmayor.M_defenderE(BM, Centro1);
@@ -897,7 +897,7 @@ public class Menu {
                                                 pesado=VPesado_B.V_construccionP(Centro1);
                                                 break;
                                             case 2:
-                                                VPesado_B.V_atacarP(pesado, Centro1);
+                                                VPesado_B.V_atacarP(pesado, Centro1,Centro2);
                                                 break;
                                         }
                                     }
@@ -919,7 +919,7 @@ public class Menu {
                                                 ligero=VLigero_B.V_construccion(Centro1);
                                                 break;
                                             case 2:
-                                                VLigero_B.V_atacar(ligero, Centro1);
+                                                VLigero_B.V_atacar(ligero, Centro1,Centro2);
                                                 break;
                                         }
                                     }
@@ -1131,7 +1131,7 @@ public class Menu {
                                                 SOLDADO=soldados.M_entrenar(Centro1);
                                                 break;
                                             case 2:
-                                                soldados.M_atacar(SOLDADO,Centro1);
+                                                soldados.M_atacar(SOLDADO,Centro1,Centro2);
                                                 break;
                                             case 3:
                                                 soldados.M_defender(SOLDADO, Centro1);
@@ -1157,7 +1157,7 @@ public class Menu {
                                                 Especial=especialista.M_entrenarE(Centro1);
                                                 break;
                                             case 2:
-                                                especialista.M_atacarE(Especial,Centro1);
+                                                especialista.M_atacarE(Especial,Centro1,Centro2);
                                                 break;
                                             case 3:
                                                 especialista.M_defenderE(Especial, Centro1);
@@ -1199,7 +1199,7 @@ public class Menu {
                                                 pesado=tanque.V_construccionP(Centro1);
                                                 break;
                                             case 2:
-                                                tanque.V_atacarP(pesado, Centro1);
+                                                tanque.V_atacarP(pesado, Centro1,Centro2);
                                                 break;
                                         }
                                     }
@@ -1220,7 +1220,7 @@ public class Menu {
                                                 ligero=moto.V_construccion(Centro1);
                                                 break;
                                             case 2:
-                                                moto.V_atacar(ligero, Centro1);
+                                                moto.V_atacar(ligero, Centro1,Centro2);
                                                 break;
                                         }
                                     }
@@ -1421,7 +1421,7 @@ public class Menu {
                                                 SOLDADOSE=horda.M_entrenar(Centro1);
                                                 break;
                                             case 2:
-                                                horda.M_atacar(SOLDADOSE, Centro1);
+                                                horda.M_atacar(SOLDADOSE, Centro1,Centro2);
                                                 break;
                                             case 3:
                                                 horda.M_defender(SOLDADOSE, Centro1);
@@ -1447,7 +1447,7 @@ public class Menu {
                                                 ESPECIALE=colosal.M_entrenarE(Centro1);
                                                 break;
                                             case 2:
-                                                colosal.M_atacarE(ESPECIALE, Centro1);
+                                                colosal.M_atacarE(ESPECIALE, Centro1,Centro2);
                                                 break;
                                             case 3:
                                                 colosal.M_defenderE(ESPECIALE, Centro1);
@@ -1490,7 +1490,7 @@ public class Menu {
                                                 pesado=tanqueE.V_construccionP(Centro1);
                                                 break;
                                             case 2:
-                                                tanqueE.V_atacarP(pesado, Centro1);
+                                                tanqueE.V_atacarP(pesado, Centro1,Centro2);
                                                 break;
                                         }
                                     }
@@ -1512,7 +1512,7 @@ public class Menu {
                                                 ligero=bici.V_construccion(Centro1);
                                                 break;
                                             case 2:
-                                                bici.V_atacar(ligero, Centro1);
+                                                bici.V_atacar(ligero, Centro1,Centro2);
                                                 break;
                                         }
                                     }
@@ -1719,7 +1719,7 @@ public class Menu {
                                                 TRI=tribu.M_entrenar(Centro1);
                                                 break;
                                             case 2:
-                                                tribu.M_atacar(TRI, Centro1);
+                                                tribu.M_atacar(TRI, Centro1,Centro2);
                                                 break;
                                             case 3:
                                                 tribu.M_defender(TRI, Centro1);
@@ -1745,7 +1745,7 @@ public class Menu {
                                                 BM=Bmayor.M_entrenarE(Centro1);
                                                 break;
                                             case 2:
-                                                Bmayor.M_atacarE(BM, Centro1);
+                                                Bmayor.M_atacarE(BM, Centro1,Centro2);
                                                 break;
                                             case 3:
                                                 Bmayor.M_defenderE(BM, Centro1);
@@ -1789,7 +1789,7 @@ public class Menu {
                                                 pesado=VPesado_B.V_construccionP(Centro1);
                                                 break;
                                             case 2:
-                                                VPesado_B.V_atacarP(pesado, Centro1);
+                                                VPesado_B.V_atacarP(pesado, Centro1,Centro2);
                                                 break;
                                         }
                                     }
@@ -1811,7 +1811,7 @@ public class Menu {
                                                 ligero=VLigero_B.V_construccion(Centro1);
                                                 break;
                                             case 2:
-                                                VLigero_B.V_atacar(ligero, Centro1);
+                                                VLigero_B.V_atacar(ligero, Centro1,Centro2);
                                                 break;
                                         }
                                     }
