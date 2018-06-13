@@ -14,21 +14,21 @@ import java.util.ArrayList;
 public interface Esqueleto {
     //METODOS MILICIA:
     ArrayList<Horda> M_entrenar(ArrayList<Integer> Centro);
-    void M_atacar(ArrayList<Horda> Horda,ArrayList<Integer> Centro);
+    void M_atacar(ArrayList<Horda> Horda,ArrayList<Integer> Centro,ArrayList<Integer> Centros);
     void M_defender(ArrayList<Horda> Horda,ArrayList<Integer> Centro);
     
     ArrayList<EsqueletoColosal> M_entrenarE(ArrayList<Integer> Centro);
-    void M_atacarE(ArrayList<EsqueletoColosal> EsqueletoColosal, ArrayList<Integer> Centro);
+    void M_atacarE(ArrayList<EsqueletoColosal> EsqueletoColosal, ArrayList<Integer> Centro,ArrayList<Integer> Centros);
     void M_defenderE(ArrayList<EsqueletoColosal> EsqueletoColosal, ArrayList<Integer> Centro);
     //METODOS EDIFICACION:
     int E_generar();
     ArrayList<Integer> E_recolectar(int a,ArrayList<Integer> Centro);
     //METODOS VEHICULO:
     ArrayList<VLigero_E> V_construccion(ArrayList<Integer> Centro);
-    void V_atacar(ArrayList<VLigero_E> VLigero_E,ArrayList<Integer> Centro);
+    void V_atacar(ArrayList<VLigero_E> VLigero_E,ArrayList<Integer> Centro,ArrayList<Integer> Centros);
     
     ArrayList<VPesado_E> V_construccionP(ArrayList<Integer> Centro);
-    void V_atacarP(ArrayList<VPesado_E> VPesado_E, ArrayList<Integer> Centro);
+    void V_atacarP(ArrayList<VPesado_E> VPesado_E, ArrayList<Integer> Centro,ArrayList<Integer> Centros);
     //CENTRO DE MANDO
     ArrayList<Integer> generarCE();
     ArrayList<Integer> mejorarCE(int num,ArrayList<Integer> Centro);
