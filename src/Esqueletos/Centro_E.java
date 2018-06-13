@@ -40,7 +40,10 @@ public class Centro_E implements Esqueleto {
                 Centro.set(0, Centro.get(0)-costo);
                 Centro.set(1, Centro.get(1)-costo);
                 Centro.set(2, Centro.get(2)-costo);
-
+                
+                Centro.set(3, Centro.get(0)+((int)0.1*Centro.get(0)));
+                Centro.set(4, Centro.get(1)+((int)0.1*Centro.get(1)));
+                Centro.set(5, Centro.get(2)+((int)0.1*Centro.get(2)));
                 System.out.println("\t\tSe realizo la mejora");
                 break;
             case 2:
@@ -48,6 +51,10 @@ public class Centro_E implements Esqueleto {
                 Centro.set(0, Centro.get(0)-costo);
                 Centro.set(1, Centro.get(1)-costo);
                 Centro.set(2, Centro.get(2)-costo);
+                
+                Centro.set(3, Centro.get(0)+((int)0.3*Centro.get(0)));
+                Centro.set(4, Centro.get(1)+((int)0.3*Centro.get(1)));
+                Centro.set(5, Centro.get(2)+((int)0.3*Centro.get(2)));
 
                 System.out.println("\t\tSe realizo la mejora");
                 break;
@@ -56,7 +63,10 @@ public class Centro_E implements Esqueleto {
                 Centro.set(0, Centro.get(0)-costo);
                 Centro.set(1, Centro.get(1)-costo);
                 Centro.set(2, Centro.get(2)-costo);
-
+                
+                Centro.set(3, Centro.get(0)+((int)0.5*Centro.get(0)));
+                Centro.set(4, Centro.get(1)+((int)0.5*Centro.get(1)));
+                Centro.set(5, Centro.get(2)+((int)0.5*Centro.get(2)));
                 System.out.println("\t\tSe realizo la mejora");
                 break;
         }
