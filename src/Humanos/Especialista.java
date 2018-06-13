@@ -16,7 +16,7 @@ public class Especialista implements Humano{
     
     private int vida = 200;
     private String nombre = "Bestia Mayor";
-    private int ataque = 100;
+    private int ataque = 300;
     private boolean entrenado = false;
     
     public Especialista(){
