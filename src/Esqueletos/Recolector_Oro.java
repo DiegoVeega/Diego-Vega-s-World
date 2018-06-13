@@ -49,7 +49,7 @@ public class Recolector_Oro implements Esqueleto{
     }
 
     @Override
-    public void M_atacar(ArrayList<Horda> Horda, ArrayList<Integer> Centro) {
+    public void M_atacar(ArrayList<Horda> Horda, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -64,7 +64,7 @@ public class Recolector_Oro implements Esqueleto{
     }
 
     @Override
-    public void M_atacarE(ArrayList<EsqueletoColosal> EsqueletoColosal, ArrayList<Integer> Centro) {
+    public void M_atacarE(ArrayList<EsqueletoColosal> EsqueletoColosal, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -79,7 +79,7 @@ public class Recolector_Oro implements Esqueleto{
     }
 
     @Override
-    public void V_atacar(ArrayList<VLigero_E> VLigero_E, ArrayList<Integer> Centro) {
+    public void V_atacar(ArrayList<VLigero_E> VLigero_E, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -89,7 +89,7 @@ public class Recolector_Oro implements Esqueleto{
     }
 
     @Override
-    public void V_atacarP(ArrayList<VPesado_E> VPesado_E, ArrayList<Integer> Centro) {
+    public void V_atacarP(ArrayList<VPesado_E> VPesado_E, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
