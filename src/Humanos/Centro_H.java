@@ -120,7 +120,7 @@ public class Centro_H implements Humano{
     }
 
     @Override
-    public void M_atacar(ArrayList<Soldados> Tribu, ArrayList<Integer> Centro) {
+    public void M_atacar(ArrayList<Soldados> Tribu, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -135,7 +135,7 @@ public class Centro_H implements Humano{
     }
 
     @Override
-    public void M_atacarE(ArrayList<Especialista> Especialista, ArrayList<Integer> Centro) {
+    public void M_atacarE(ArrayList<Especialista> Especialista, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -150,7 +150,7 @@ public class Centro_H implements Humano{
     }
 
     @Override
-    public void V_atacar(ArrayList<VLigero_H> VLigero_H, ArrayList<Integer> Centro) {
+    public void V_atacar(ArrayList<VLigero_H> VLigero_H, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -160,7 +160,7 @@ public class Centro_H implements Humano{
     }
 
     @Override
-    public void V_atacarP(ArrayList<VPesado_H> VPesado_H, ArrayList<Integer> Centro) {
+    public void V_atacarP(ArrayList<VPesado_H> VPesado_H, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

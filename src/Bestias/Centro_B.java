@@ -20,13 +20,13 @@ public class Centro_B implements Bestia {
     @Override
     public ArrayList<Integer> generarCB() {
         ArrayList<Integer> Centro = new ArrayList<>();
-        Centro.add(alma);
-        Centro.add(cristal);
-        Centro.add(luz);
-        Centro.add(MAXalma);
-        Centro.add(MAXcristal);
-        Centro.add(MAXluz);
-        Centro.add(vida);
+        Centro.add(alma);//0
+        Centro.add(cristal);//1
+        Centro.add(luz);//2
+        Centro.add(MAXalma);//3
+        Centro.add(MAXcristal);//4
+        Centro.add(MAXluz);//5
+        Centro.add(vida);//6
         System.out.println("\n\t\t\t\t\t\tRey, ahora tiene un centro de mando bestial.\n");
         return Centro;
     }
@@ -120,7 +120,7 @@ public class Centro_B implements Bestia {
     }
 
     @Override
-    public void M_atacar(ArrayList<Tribu> Tribu, ArrayList<Integer> Centro) {
+    public void M_atacar(ArrayList<Tribu> Tribu, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -135,7 +135,7 @@ public class Centro_B implements Bestia {
     }
 
     @Override
-    public void M_atacarE(ArrayList<BestiaMayor> BestiaMayor, ArrayList<Integer> Centro) {
+    public void M_atacarE(ArrayList<BestiaMayor> BestiaMayor, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -150,7 +150,7 @@ public class Centro_B implements Bestia {
     }
 
     @Override
-    public void V_atacar(ArrayList<VLigero_B> VLigero_B, ArrayList<Integer> Centro) {
+    public void V_atacar(ArrayList<VLigero_B> VLigero_B, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -160,7 +160,7 @@ public class Centro_B implements Bestia {
     }
 
     @Override
-    public void V_atacarP(ArrayList<VPesado_B> VPesado_B, ArrayList<Integer> Centro) {
+    public void V_atacarP(ArrayList<VPesado_B> VPesado_B, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
