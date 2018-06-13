@@ -96,7 +96,7 @@ public class Especialista implements Humano{
     }
 
     @Override
-    public void M_atacar(ArrayList<Soldados> Soldado, ArrayList<Integer> Centro) {
+    public void M_atacar(ArrayList<Soldados> Soldado, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -119,7 +119,7 @@ public class Especialista implements Humano{
     }
 
     @Override
-    public void M_atacarE(ArrayList<Especialista> Especialista, ArrayList<Integer> Centro) {
+    public void M_atacarE(ArrayList<Especialista> Especialista, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         Centro.set(1,Centro.get(1)-300);
         Centro.set(2,Centro.get(2)-300);
         
@@ -136,6 +136,7 @@ public class Especialista implements Humano{
         System.out.print("\t\tA quien desea enviar? ");
         op=text.nextInt();
         System.out.println("Se enviara a: "+Milicia.get(op-1));
+        Centros.set(6, Centros.get(6)-ataque);
         Milicia.remove(op-1);
     }
 
@@ -166,7 +167,7 @@ public class Especialista implements Humano{
     }
 
     @Override
-    public void V_atacar(ArrayList<VLigero_H> VLigero_H, ArrayList<Integer> Centro) {
+    public void V_atacar(ArrayList<VLigero_H> VLigero_H, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -176,7 +177,7 @@ public class Especialista implements Humano{
     }
 
     @Override
-    public void V_atacarP(ArrayList<VPesado_H> VPesado_H, ArrayList<Integer> Centro) {
+    public void V_atacarP(ArrayList<VPesado_H> VPesado_H, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

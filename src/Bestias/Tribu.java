@@ -78,7 +78,7 @@ public class Tribu implements Bestia {
     }
 
     @Override
-    public void M_atacar(ArrayList<Tribu> Tribu,ArrayList<Integer> Centro) {
+    public void M_atacar(ArrayList<Tribu> Tribu,ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         
         Centro.set(1,Centro.get(1)-200);
         Centro.set(2,Centro.get(2)-200);
@@ -96,6 +96,7 @@ public class Tribu implements Bestia {
         System.out.print("\t\tA quien desea enviar? ");
         op=text.nextInt();
         System.out.println("Se enviara a: "+Milicia.get(op-1));
+        Centros.set(6, Centros.get(6)-ataque);
         Milicia.remove(op-1);
     }
     
@@ -156,7 +157,7 @@ public class Tribu implements Bestia {
     }
 
     @Override
-    public void M_atacarE(ArrayList<BestiaMayor> BestiaMayor, ArrayList<Integer> Centro) {
+    public void M_atacarE(ArrayList<BestiaMayor> BestiaMayor, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -171,7 +172,7 @@ public class Tribu implements Bestia {
     }
 
     @Override
-    public void V_atacar(ArrayList<VLigero_B> VLigero_B, ArrayList<Integer> Centro) {
+    public void V_atacar(ArrayList<VLigero_B> VLigero_B, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -181,7 +182,7 @@ public class Tribu implements Bestia {
     }
 
     @Override
-    public void V_atacarP(ArrayList<VPesado_B> VPesado_B, ArrayList<Integer> Centro) {
+    public void V_atacarP(ArrayList<VPesado_B> VPesado_B, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

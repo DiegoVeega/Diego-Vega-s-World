@@ -90,7 +90,7 @@ public class EsqueletoColosal implements Esqueleto{
     }
 
     @Override
-    public void M_atacar(ArrayList<Horda> Horda,ArrayList<Integer> Centro) {
+    public void M_atacar(ArrayList<Horda> Horda,ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -110,7 +110,7 @@ public class EsqueletoColosal implements Esqueleto{
     }
 
     @Override
-    public void M_atacarE(ArrayList<EsqueletoColosal> EsqueletoColosal, ArrayList<Integer> Centro) {
+    public void M_atacarE(ArrayList<EsqueletoColosal> EsqueletoColosal, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         Scanner text=new Scanner(System.in);
         int op;
         ArrayList<EsqueletoColosal> Milicia = new ArrayList<>();
@@ -124,6 +124,7 @@ public class EsqueletoColosal implements Esqueleto{
         System.out.print("\t\tA quien desea enviar? ");
         op=text.nextInt();
         System.out.println("Se enviara a: "+Milicia.get(op-1));
+        Centros.set(6, Centros.get(6)-ataque);
         Milicia.remove(op-1);
     }
 
@@ -156,7 +157,7 @@ public class EsqueletoColosal implements Esqueleto{
     }
 
     @Override
-    public void V_atacar(ArrayList<VLigero_E> VLigero_E, ArrayList<Integer> Centro) {
+    public void V_atacar(ArrayList<VLigero_E> VLigero_E, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -166,7 +167,7 @@ public class EsqueletoColosal implements Esqueleto{
     }
 
     @Override
-    public void V_atacarP(ArrayList<VPesado_E> VPesado_E, ArrayList<Integer> Centro) {
+    public void V_atacarP(ArrayList<VPesado_E> VPesado_E, ArrayList<Integer> Centro,ArrayList<Integer> Centros) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
