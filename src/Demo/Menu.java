@@ -134,15 +134,17 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar. $600 de madera por $300 de piedra y de hierro. ");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
                                                 recolectado=madera.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     madera.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -160,15 +162,17 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar. $600 de piedra por $300 de madera y de hierro. ");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
                                                 recolectado=piedra.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     piedra.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -186,15 +190,17 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar. $600 de hierro por $300 de piedra y de madera.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
                                                 recolectado=hierro.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     hierro.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -258,7 +264,7 @@ public class Menu {
                                         System.out.println("\t\t2. Comenzar ataque. $300 piedra y de hierro.");
                                         System.out.println("\t\t3. Comenzar defenza. $200 hierro y madera.");
                                         System.out.println("\t\t4. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -300,7 +306,7 @@ public class Menu {
                                         System.out.println("\n\t\t1. Construir vehiculo. $50 hierro y madera.");
                                         System.out.println("\t\t2. Comenzar ataque. $100 piedra y de hierro.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -321,7 +327,7 @@ public class Menu {
                                         System.out.println("\n\t\t1. Construir vehiculo. $100 hierro y piedra.");
                                         System.out.println("\t\t2. Comenzar ataque. $105 madera y piedra.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -429,15 +435,17 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar. $600 de plata por $200 de oro y de diamante.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
                                                 recolectado=plata.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     plata.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -454,15 +462,17 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar. $600 de oro por $200 de plata y de diamante.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
                                                 recolectado=oro.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     oro.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -479,15 +489,17 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar. $600 de diamante por $200 de oro y de plata.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
                                                 recolectado=diamante.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     diamante.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -525,7 +537,7 @@ public class Menu {
                                         System.out.println("\t\t2. Comenzar ataque.");
                                         System.out.println("\t\t3. Comenzar defenza.");
                                         System.out.println("\t\t4. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -551,7 +563,7 @@ public class Menu {
                                         System.out.println("\t\t2. Comenzar ataque. $300 oro y de diamante.");
                                         System.out.println("\t\t3. Comenzar defenza. $200 diamante y plata.");
                                         System.out.println("\t\t4. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -594,7 +606,7 @@ public class Menu {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -616,7 +628,7 @@ public class Menu {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -722,19 +734,21 @@ public class Menu {
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Bestia alma = factory.getBestia(1);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de alma por $300 de cristal y de luz.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         //int cant1 = 0;
                                         switch (ops) {
                                             case 1:
                                                 recolectado=alma.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     alma.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -749,19 +763,21 @@ public class Menu {
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Bestia cristal = factory.getBestia(2);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de cristal por $300 de alma y de luz.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         //int cant2 = 0;
                                         switch (ops) {
                                             case 1:
                                                 recolectado=cristal.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     cristal.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -776,19 +792,21 @@ public class Menu {
                                     ////////////////////////////////////////////////////////////////////////////////////
                                     Bestia luz = factory.getBestia(3);
                                     while (ops != 3) {
-                                        System.out.println("\n\t\t1. Comenzar a recolectar.");
+                                        System.out.println("\n\t\t1. Comenzar a recolectar. $600 de luz por $300 de cristal y de alma.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         //int cant3 = 0;
                                         switch (ops) {
                                             case 1:
                                                 recolectado=luz.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     luz.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -826,7 +844,7 @@ public class Menu {
                                         System.out.println("\t\t2. Comenzar ataque.");
                                         System.out.println("\t\t3. Comenzar defenza.");
                                         System.out.println("\t\t4. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -852,7 +870,7 @@ public class Menu {
                                         System.out.println("\t\t2. Comenzar ataque. $300 oro y de diamante.");
                                         System.out.println("\t\t3. Comenzar defenza. $200 diamante y plata.");
                                         System.out.println("\t\t4. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -896,7 +914,7 @@ public class Menu {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -918,7 +936,7 @@ public class Menu {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -1035,15 +1053,17 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar. $600 de madera por $300 de piedra y de hierro. ");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
                                                 recolectado=madera.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     madera.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -1061,15 +1081,17 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar. $600 de piedra por $300 de madera y de hierro. ");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
                                                 recolectado=piedra.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     piedra.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -1087,15 +1109,17 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar. $600 de hierro por $300 de piedra y de madera.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
                                                 recolectado=hierro.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     hierro.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -1159,7 +1183,7 @@ public class Menu {
                                         System.out.println("\t\t2. Comenzar ataque. $300 piedra y de hierro.");
                                         System.out.println("\t\t3. Comenzar defenza. $200 hierro y madera.");
                                         System.out.println("\t\t4. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -1201,7 +1225,7 @@ public class Menu {
                                         System.out.println("\n\t\t1. Construir vehiculo. $50 hierro y madera.");
                                         System.out.println("\t\t2. Comenzar ataque. $100 piedra y de hierro.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -1222,7 +1246,7 @@ public class Menu {
                                         System.out.println("\n\t\t1. Construir vehiculo. $100 hierro y piedra.");
                                         System.out.println("\t\t2. Comenzar ataque. $105 madera y piedra.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -1330,15 +1354,17 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar. $600 de plata por $200 de oro y de diamante.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
                                                 recolectado=plata.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     plata.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -1355,15 +1381,17 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar. $600 de oro por $200 de plata y de diamante.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
                                                 recolectado=oro.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     oro.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -1380,15 +1408,17 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar. $600 de diamante por $200 de oro y de plata.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
                                                 recolectado=diamante.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     diamante.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -1426,7 +1456,7 @@ public class Menu {
                                         System.out.println("\t\t2. Comenzar ataque.");
                                         System.out.println("\t\t3. Comenzar defenza.");
                                         System.out.println("\t\t4. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -1452,7 +1482,7 @@ public class Menu {
                                         System.out.println("\t\t2. Comenzar ataque. $300 oro y de diamante.");
                                         System.out.println("\t\t3. Comenzar defenza. $200 diamante y plata.");
                                         System.out.println("\t\t4. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -1495,7 +1525,7 @@ public class Menu {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -1517,7 +1547,7 @@ public class Menu {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -1626,16 +1656,18 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         //int cant1 = 0;
                                         switch (ops) {
                                             case 1:
                                                 recolectado=alma.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     alma.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -1653,16 +1685,18 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         //int cant2 = 0;
                                         switch (ops) {
                                             case 1:
                                                 recolectado=cristal.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     cristal.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -1680,16 +1714,18 @@ public class Menu {
                                         System.out.println("\n\t\t1. Comenzar a recolectar.");
                                         System.out.println("\t\t2. Obetener lo recolectado.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         //int cant3 = 0;
                                         switch (ops) {
                                             case 1:
                                                 recolectado=luz.E_generar();
+                                                System.out.println("\n\t\tSE COMENZO LA RECOLECCION\n");
                                                 break;
                                             case 2:
                                                 if(recolectado!=0){
                                                     luz.E_recolectar(recolectado, Centro1);
+                                                    System.out.println("\n\t\tSE RECOLECTO LO GENERADO\n");
                                                 }
                                                 else{
                                                     System.out.println("\t\tPRIMERO DEBE INICIAR A RECOLECTAR.");
@@ -1727,7 +1763,7 @@ public class Menu {
                                         System.out.println("\t\t2. Comenzar ataque.");
                                         System.out.println("\t\t3. Comenzar defenza.");
                                         System.out.println("\t\t4. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -1753,7 +1789,7 @@ public class Menu {
                                         System.out.println("\t\t2. Comenzar ataque. $300 cristal y de luz.");
                                         System.out.println("\t\t3. Comenzar defenza. $200 luz y alma.");
                                         System.out.println("\t\t4. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -1797,7 +1833,7 @@ public class Menu {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
@@ -1819,7 +1855,7 @@ public class Menu {
                                         System.out.println("\n\t\t1. Construir vehiculo.");
                                         System.out.println("\t\t2. Comenzar ataque.");
                                         System.out.println("\t\t3. Terminar accion.");
-                                        System.out.println("\n\t\tTu eleccion: ");
+                                        System.out.print("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
                                         switch (ops) {
                                             case 1:
