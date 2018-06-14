@@ -90,7 +90,7 @@ public class BestiaMayor implements Bestia{
         System.out.println("\n\t\tRey, estos son sus Bestias Mayoress: \n");
         for (BestiaMayor t : Milicia) {
             for (int i = 0; i < Milicia.size(); i++) {
-                System.out.println("\t\t" + i + 1 + "Soy una " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
+                System.out.println("\t\t" + i + 1 + ". Soy una " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
             }
         }
         System.out.print("\t\tA quien desea enviar? ");

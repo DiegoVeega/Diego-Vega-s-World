@@ -17,7 +17,7 @@ public class VLigero_E implements Esqueleto{
     
     private int vida = 50;
     private String nombre = "bici de huesos";
-    private int ataque = 55;
+    private int ataque = 85;
     private boolean construido = false;
     
     public VLigero_E(){

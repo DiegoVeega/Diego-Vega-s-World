@@ -130,7 +130,7 @@ public class Especialista implements Humano{
         System.out.println("\n\t\tRey, estos son sus tribus: \n");
         for (Especialista t : Milicia) {
             for (int i = 0; i < Milicia.size(); i++) {
-                System.out.println("\t\t" + (i =i+ 1) + "Somos " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
+                System.out.println("\t\t" + (i =i+ 1) + ". Somos " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
             }
         }
         System.out.print("\t\tA quien desea enviar? ");

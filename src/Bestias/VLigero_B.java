@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class VLigero_B implements Bestia{
     private int vida = 50;
     private String nombre = "Carreta de bestia";
-    private int ataque = 55;
+    private int ataque = 85;
     private boolean construido = false;
     
     public VLigero_B(){

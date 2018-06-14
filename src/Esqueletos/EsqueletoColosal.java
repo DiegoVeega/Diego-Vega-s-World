@@ -118,7 +118,7 @@ public class EsqueletoColosal implements Esqueleto{
         System.out.println("\n\t\tRey, estos son sus Especialistas: \n");
         for (EsqueletoColosal t : Milicia) {
             for (int i = 0; i < Milicia.size(); i++) {
-                System.out.println("\t\t" + (i =i+ 1) + "Soy una " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
+                System.out.println("\t\t" + (i =i+ 1) + ". Soy un " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
             }
         }
         System.out.print("\t\tA quien desea enviar? ");

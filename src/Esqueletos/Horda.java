@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class Horda implements Esqueleto{
     private int vida = 50;
     private String nombre = "Horda";
-    private int ataque = 50;
+    private int ataque = 70;
     private boolean entrenado = false;
     
     public Horda(){
@@ -99,7 +99,7 @@ public class Horda implements Esqueleto{
         System.out.println("\n\t\tRey, estos son sus hordas: \n");
         for (Horda t : Milicia) {
             for (int i = 0; i < Milicia.size(); i++) {
-                System.out.println("\t\t" + (i =i+ 1) + "Soy una " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
+                System.out.println("\t\t" + (i =i+ 1) + ". Soy una " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
             }
         }
         System.out.print("\t\tA quien desea enviar? ");

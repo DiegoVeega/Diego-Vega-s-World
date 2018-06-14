@@ -16,7 +16,7 @@ public class VLigero_H implements Humano{
 
     private int vida = 50;
     private String nombre = "Moto";
-    private int ataque = 55;
+    private int ataque = 85;
     private boolean construido = false;
     
     public VLigero_H(){

@@ -37,9 +37,9 @@ public class Centro_E implements Esqueleto {
         switch (num) {
             case 1:
                 costo = 1650;
-                Centro.set(0, Centro.get(0) - costo);
-                Centro.set(1, Centro.get(1) - costo);
-                Centro.set(2, Centro.get(2) - costo);
+                Centro.set(0, Centro.get(0)-costo);
+                Centro.set(1, Centro.get(1)-costo);
+                Centro.set(2, Centro.get(2)-costo);
 
                 Centro.set(3, 11000);
                 Centro.set(4, 5500);

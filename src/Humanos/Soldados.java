@@ -16,7 +16,7 @@ public class Soldados implements Humano{
     
     private int vida = 50;
     private String nombre = "Soldados";
-    private int ataque = 50;
+    private int ataque = 70;
     private boolean entrenado = false;
 
     public Soldados() {
@@ -98,7 +98,7 @@ public class Soldados implements Humano{
         System.out.println("\n\t\tRey, estos son sus tribus: \n");
         for (Soldados t : Milicia) {
             for (int i = 0; i < Milicia.size(); i++) {
-                System.out.println("\t\t" + (i =i+ 1) + "Somos " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
+                System.out.println("\t\t" + (i =i+ 1) + ". Somos " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
             }
         }
         System.out.print("\t\tA quien desea enviar? ");
