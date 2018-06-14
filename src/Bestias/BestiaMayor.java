@@ -71,12 +71,12 @@ public class BestiaMayor implements Bestia{
         System.out.println("\n\t\tRey, estos son sus Bestias Mayores: \n");
         for (BestiaMayor t : Milicia) {
             for (int i = 0; i < Milicia.size(); i++) {
-                System.out.println("\t\t" + i + 1 + "Soy una " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
+                System.out.println("\t\t" + (i =i+ 1) + "Soy una " + t.getNombre() + " con " + t.getVida() + " de vida y tengo " + t.getAtaque() + " de ataque.\n");
             }
         }
         System.out.print("\t\tA quien desea enviar? ");
         op=text.nextInt();
-        System.out.println("Se enviara a: "+Milicia.get(op-1));
+        System.out.println("\t\tSe enviara a: "+Milicia.get(op-1));
         Centros.set(6, Centros.get(6)-ataque);
         Milicia.remove(op-1);
     }

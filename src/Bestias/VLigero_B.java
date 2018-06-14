@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class VLigero_B implements Bestia{
     private int vida = 50;
     private String nombre = "Carreta de bestia";
-    private int ataque = 25;
+    private int ataque = 55;
     private boolean construido = false;
     
     public VLigero_B(){
@@ -80,12 +80,12 @@ public class VLigero_B implements Bestia{
         System.out.println("\n\t\tRey, estos son sus Vehiculos ligeros: \n");
         for (VLigero_B t : Vehiculo) {
             for (int i = 0; i < Vehiculo.size(); i++) {
-                System.out.println("\t\t" + i + 1 + "Es una " + t.getNombre() + " con " + t.getVida() + " de vida y tiene " + t.getAtaque() + " de ataque.\n");
+                System.out.println("\t\t" + (i =i+ 1) + ". Es una " + t.getNombre() + " con " + t.getVida() + " de vida y tiene " + t.getAtaque() + " de ataque.\n");
             }
         }
         System.out.print("\t\tQue vehiculo desea enviar? ");
         op=text.nextInt();
-        System.out.println("Se enviara a: "+Vehiculo.get(op-1));
+        System.out.println("\t\tSe enviara a: "+Vehiculo.get(op-1));
         Centros.set(6, Centros.get(6)-ataque);
         Vehiculo.remove(op-1);
     }
