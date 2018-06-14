@@ -15,7 +15,7 @@ public class Centro_H implements Humano{
     
     int madera = 1700, piedra = 1700, hierro = 1700;
     int MAXmadera = 10000, MAXpiedra = 5000, MAXhierro = 3000;
-    int vida=2500;
+    int vida=2100;
     
     @Override
     public ArrayList<Integer> generarCH() {

@@ -15,7 +15,7 @@ public class Centro_B implements Bestia {
 
     int alma = 1700, cristal = 1700, luz = 1700;
     int MAXalma = 10000, MAXcristal = 5000, MAXluz = 3000;
-    int vida=2500;
+    int vida=2100;
     
     @Override
     public ArrayList<Integer> generarCB() {

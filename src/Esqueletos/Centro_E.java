@@ -15,7 +15,7 @@ public class Centro_E implements Esqueleto {
 
     int plata = 1700, oro = 1700, diamante = 1700;
     int MAXplata = 10000, MAXoro = 5000, MAXdiamante = 3000;
-    int vida = 2500;
+    int vida = 2100;
 
     @Override
     public ArrayList<Integer> generarCE() {
