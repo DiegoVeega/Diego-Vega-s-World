@@ -346,6 +346,9 @@ public class Menu {
                         int num = 3;
                         while (num != 2) {
                             System.out.println("\t\tSeguro que quiere hacer mejoras?");
+                            System.out.println("\t\tNivel 1: 1650 de cada recurso.");
+                            System.out.println("\t\tNivel 2: 1895 de cada recurso.");
+                            System.out.println("\t\tNivel 3: 2274 de cada recurso.");
                             System.out.println("\t\t1. Si");
                             System.out.println("\t\t2. No");
                             System.out.print("\n\t\tTu eleccion: ");
@@ -544,9 +547,9 @@ public class Menu {
                                     Esqueleto colosal = factory.getEsqueleto(5);
                                     ArrayList<EsqueletoColosal> ESPECIALE= new ArrayList<>();
                                     while (ops != 4) {
-                                        System.out.println("\n\t\t1. Comenzar a entrenar.");
-                                        System.out.println("\t\t2. Comenzar ataque.");
-                                        System.out.println("\t\t3. Comenzar defenza.");
+                                        System.out.println("\n\t\t1. Comenzar a entrenar. $600 de plata y oro.");
+                                        System.out.println("\t\t2. Comenzar ataque. $300 oro y de diamante.");
+                                        System.out.println("\t\t3. Comenzar defenza. $200 diamante y plata.");
                                         System.out.println("\t\t4. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
@@ -638,6 +641,9 @@ public class Menu {
                         int num = 3;
                         while (num != 2) {
                             System.out.println("\t\tSeguro que quiere hacer mejoras?");
+                            System.out.println("\t\tNivel 1: 1650 de cada recurso.");
+                            System.out.println("\t\tNivel 2: 1895 de cada recurso.");
+                            System.out.println("\t\tNivel 3: 2274 de cada recurso.");
                             System.out.println("\t\t1. Si");
                             System.out.println("\t\t2. No");
                             System.out.print("\n\t\tTu eleccion: ");
@@ -842,9 +848,9 @@ public class Menu {
                                     Bestia Bmayor = factory.getBestia(5);
                                     ArrayList<BestiaMayor> BM= new ArrayList<>();
                                     while (ops != 4) {
-                                        System.out.println("\n\t\t1. Comenzar a entrenar.");
-                                        System.out.println("\t\t2. Comenzar ataque.");
-                                        System.out.println("\t\t3. Comenzar defenza.");
+                                        System.out.println("\n\t\t1. Comenzar a entrenar. $600 de plata y oro.");
+                                        System.out.println("\t\t2. Comenzar ataque. $300 oro y de diamante.");
+                                        System.out.println("\t\t3. Comenzar defenza. $200 diamante y plata.");
                                         System.out.println("\t\t4. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
@@ -937,6 +943,9 @@ public class Menu {
                         int num = 3;
                         while (num != 2) {
                             System.out.println("\t\tSeguro que quiere hacer mejoras?");
+                            System.out.println("\t\tNivel 1: 1650 de cada recurso.");
+                            System.out.println("\t\tNivel 2: 1895 de cada recurso.");
+                            System.out.println("\t\tNivel 3: 2274 de cada recurso.");
                             System.out.println("\t\t1. Si");
                             System.out.println("\t\t2. No");
                             System.out.print("\n\t\tTu eleccion: ");
@@ -1238,6 +1247,9 @@ public class Menu {
                         int num = 3;
                         while (num != 2) {
                             System.out.println("\t\tSeguro que quiere hacer mejoras?");
+                            System.out.println("\t\tNivel 1: 1650 de cada recurso.");
+                            System.out.println("\t\tNivel 2: 1895 de cada recurso.");
+                            System.out.println("\t\tNivel 3: 2274 de cada recurso.");
                             System.out.println("\t\t1. Si");
                             System.out.println("\t\t2. No");
                             System.out.print("\n\t\tTu eleccion: ");
@@ -1436,9 +1448,9 @@ public class Menu {
                                     Esqueleto colosal = factory1.getEsqueleto(5);
                                     ArrayList<EsqueletoColosal> ESPECIALE= new ArrayList<>();
                                     while (ops != 4) {
-                                        System.out.println("\n\t\t1. Comenzar a entrenar.");
-                                        System.out.println("\t\t2. Comenzar ataque.");
-                                        System.out.println("\t\t3. Comenzar defenza.");
+                                        System.out.println("\n\t\t1. Comenzar a entrenar. $600 de plata y oro.");
+                                        System.out.println("\t\t2. Comenzar ataque. $300 oro y de diamante.");
+                                        System.out.println("\t\t3. Comenzar defenza. $200 diamante y plata.");
                                         System.out.println("\t\t4. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
@@ -1530,6 +1542,9 @@ public class Menu {
                         int num = 3;
                         while (num != 2) {
                             System.out.println("\t\tSeguro que quiere hacer mejoras?");
+                            System.out.println("\t\tNivel 1: 1650 de cada recurso.");
+                            System.out.println("\t\tNivel 2: 1895 de cada recurso.");
+                            System.out.println("\t\tNivel 3: 2274 de cada recurso.");
                             System.out.println("\t\t1. Si");
                             System.out.println("\t\t2. No");
                             System.out.print("\n\t\tTu eleccion: ");
@@ -1734,9 +1749,9 @@ public class Menu {
                                     Bestia Bmayor = factory1.getBestia(5);
                                     ArrayList<BestiaMayor> BM= new ArrayList<>();
                                     while (ops != 4) {
-                                        System.out.println("\n\t\t1. Comenzar a entrenar.");
-                                        System.out.println("\t\t2. Comenzar ataque.");
-                                        System.out.println("\t\t3. Comenzar defenza.");
+                                        System.out.println("\n\t\t1. Comenzar a entrenar. $600 de alma y cristal.");
+                                        System.out.println("\t\t2. Comenzar ataque. $300 cristal y de luz.");
+                                        System.out.println("\t\t3. Comenzar defenza. $200 luz y alma.");
                                         System.out.println("\t\t4. Terminar accion.");
                                         System.out.println("\n\t\tTu eleccion: ");
                                         ops = text.nextInt();
@@ -1829,6 +1844,9 @@ public class Menu {
                         int num = 3;
                         while (num != 2) {
                             System.out.println("\t\tSeguro que quiere hacer mejoras?");
+                            System.out.println("\t\tNivel 1: 1650 de cada recurso.");
+                            System.out.println("\t\tNivel 2: 1895 de cada recurso.");
+                            System.out.println("\t\tNivel 3: 2274 de cada recurso.");
                             System.out.println("\t\t1. Si");
                             System.out.println("\t\t2. No");
                             System.out.print("\n\t\tTu eleccion: ");
